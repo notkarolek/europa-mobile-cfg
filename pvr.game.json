@@ -1,0 +1,2758 @@
+{
+ "data": {
+ "data": [
+	{
+	"type": "dir",
+	"name": "files",
+	"size": 5126551488,
+	"data": [
+	{
+	"type": "dir",
+	"name": "anim",
+	"size": 282472096,
+	"data": [
+	{
+	"type": "file",
+	"name": "anim.img",
+	"date_change": 1659740450,
+	"size": 10942464,
+	"hash": "3359ba8cb820299161199ee7ef3f1c02"
+	},
+	{
+	"type": "file",
+	"name": "cuts.img",
+	"date_change": 1659740661,
+	"size": 270096384,
+	"hash": "2afcb246fe97406b47f4c59deaf5b716"
+	},
+	{
+	"type": "file",
+	"name": "ped.ifp",
+	"date_change": 1659740452,
+	"size": 1433248,
+	"hash": "4736b2c90b00981255f9507308ee9174"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "audio",
+	"size": 65529676,
+	"data": [
+	{
+	"type": "dir",
+	"name": "CONFIG",
+	"size": 16548084,
+	"data": [
+	{
+	"type": "file",
+	"name": "BankLkup.dat",
+	"date_change": 1659741269,
+	"size": 8520,
+	"hash": "b45905c793677487644240aa9abc2f62"
+	},
+	{
+	"type": "file",
+	"name": "BankSlot.dat",
+	"date_change": 1659741270,
+	"size": 216902,
+	"hash": "da40c568a349b58c78c2a8faf8da95a9"
+	},
+	{
+	"type": "file",
+	"name": "EventVol.dat",
+	"date_change": 1659741271,
+	"size": 45402,
+	"hash": "d676adc31b1d0a95631451344892ddd2"
+	},
+	{
+	"type": "file",
+	"name": "PakFiles.dat",
+	"date_change": 1659741271,
+	"size": 468,
+	"hash": "db1e657a3baafbb86cd1b715c5282c66"
+	},
+	{
+	"type": "file",
+	"name": "SOUNDINF.DAT",
+	"date_change": 1659741273,
+	"size": 746760,
+	"hash": "a220a41520d4c1e58c211835fbeca840"
+	},
+	{
+	"type": "file",
+	"name": "StrmPaks.dat",
+	"date_change": 1659741273,
+	"size": 272,
+	"hash": "6e65fd943ad6b0bbbc032e1f081ce699"
+	},
+	{
+	"type": "file",
+	"name": "TrakLkup.dat",
+	"date_change": 1659741274,
+	"size": 23064,
+	"hash": "528e75d663b8bae072a01351081a2145"
+	},
+	{
+	"type": "file",
+	"name": "TRKHEAD.DAT",
+	"date_change": 1659741288,
+	"size": 15506696,
+	"hash": "5f0d3c7295e8d1c7371fab89a6989723"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "SFX",
+	"size": 12782750,
+	"data": [
+	{
+	"type": "file",
+	"name": "FEET.osw",
+	"date_change": 1659741291,
+	"size": 138118,
+	"hash": "e96c0b200c3437c5088ff2bd5a9054d6"
+	},
+	{
+	"type": "file",
+	"name": "FEET.osw.idx",
+	"date_change": 1659741292,
+	"size": 1220,
+	"hash": "11635b4690838fae6ab1082d30a93890"
+	},
+	{
+	"type": "file",
+	"name": "GENRL.osw",
+	"date_change": 1659741302,
+	"size": 9362373,
+	"hash": "49f36f13260ed27c40fbce4175706cd2"
+	},
+	{
+	"type": "file",
+	"name": "GENRL.osw.idx",
+	"date_change": 1659741303,
+	"size": 20868,
+	"hash": "1430abad9623bcc316638c75017c1261"
+	},
+	{
+	"type": "file",
+	"name": "PAIN_A.osw",
+	"date_change": 1659741307,
+	"size": 3247335,
+	"hash": "6e2ec42799b7e6f366437e5cb4d04911"
+	},
+	{
+	"type": "file",
+	"name": "PAIN_A.osw.idx",
+	"date_change": 1659741307,
+	"size": 12836,
+	"hash": "aeb673a62ca2b30244a049429b1e1265"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "STREAMS",
+	"size": 36182458,
+	"data": [
+	{
+	"type": "file",
+	"name": "AA.osw",
+	"date_change": 1659741310,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "AA.osw.idx",
+	"date_change": 1659741311,
+	"size": 1522,
+	"hash": "7d3d3960131764d70b1b268ee5d332f7"
+	},
+	{
+	"type": "file",
+	"name": "ADVERTS.osw",
+	"date_change": 1659741314,
+	"size": 3516982,
+	"hash": "4ded1e1f6d9b3917617d495f5d063a13"
+	},
+	{
+	"type": "file",
+	"name": "ADVERTS.osw.idx",
+	"date_change": 1659741315,
+	"size": 1591,
+	"hash": "22e59aad9134b004dc4451ac31e123aa"
+	},
+	{
+	"type": "file",
+	"name": "AMBIENCE.osw",
+	"date_change": 1659741334,
+	"size": 22719112,
+	"hash": "83a80c9403ceffd1d9c225c300caec32"
+	},
+	{
+	"type": "file",
+	"name": "AMBIENCE.osw.idx",
+	"date_change": 1659741334,
+	"size": 924,
+	"hash": "f4713422eb3a13f8050fe963397cd454"
+	},
+	{
+	"type": "file",
+	"name": "BEATS.osw",
+	"date_change": 1659741342,
+	"size": 9415375,
+	"hash": "d04cd2d6190f1c39c1251a66a5651f14"
+	},
+	{
+	"type": "file",
+	"name": "BEATS.osw.idx",
+	"date_change": 1659741343,
+	"size": 234,
+	"hash": "25ad0a62f7324958d14ebdd63032bcf0"
+	},
+	{
+	"type": "file",
+	"name": "CH.osw",
+	"date_change": 1659741344,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "CH.osw.idx",
+	"date_change": 1659741344,
+	"size": 2994,
+	"hash": "c73c042a6522b5a7d35d8e22333f0adb"
+	},
+	{
+	"type": "file",
+	"name": "CO.osw",
+	"date_change": 1659741345,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "CO.osw.idx",
+	"date_change": 1659741346,
+	"size": 3569,
+	"hash": "d876639142072405c9e3d74b80fc11bf"
+	},
+	{
+	"type": "file",
+	"name": "CR.osw",
+	"date_change": 1659741347,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "CR.osw.idx",
+	"date_change": 1659741347,
+	"size": 3592,
+	"hash": "4c6821f5770d5c5049b121c4eaca06e0"
+	},
+	{
+	"type": "file",
+	"name": "CUTSCENE.osw",
+	"date_change": 1659741350,
+	"size": 301175,
+	"hash": "f0ba6914f2152e2eb98b0f18e6e6a40a"
+	},
+	{
+	"type": "file",
+	"name": "CUTSCENE.osw.idx",
+	"date_change": 1659741350,
+	"size": 3247,
+	"hash": "1b2f53c874854fee1e8ad76ca1acc219"
+	},
+	{
+	"type": "file",
+	"name": "DS.osw",
+	"date_change": 1659741351,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "DS.osw.idx",
+	"date_change": 1659741351,
+	"size": 4121,
+	"hash": "545a2017199e4559c5c21718a9a9d2ac"
+	},
+	{
+	"type": "file",
+	"name": "HC.osw",
+	"date_change": 1659741352,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "HC.osw.idx",
+	"date_change": 1659741353,
+	"size": 2649,
+	"hash": "c512967bedfc33bc90fcf430af54f356"
+	},
+	{
+	"type": "file",
+	"name": "MH.osw",
+	"date_change": 1659741354,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "MH.osw.idx",
+	"date_change": 1659741354,
+	"size": 3500,
+	"hash": "018ad9b23fa611d6cc631f903fa95fbc"
+	},
+	{
+	"type": "file",
+	"name": "MR.osw",
+	"date_change": 1659741355,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "MR.osw.idx",
+	"date_change": 1659741356,
+	"size": 3385,
+	"hash": "ca335e98341486d7423dad1705b6c3fa"
+	},
+	{
+	"type": "file",
+	"name": "NJ.osw",
+	"date_change": 1659741357,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "NJ.osw.idx",
+	"date_change": 1659741357,
+	"size": 2994,
+	"hash": "8d9c6d51e2b6187a87d2151108333483"
+	},
+	{
+	"type": "file",
+	"name": "RE.osw",
+	"date_change": 1659741358,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "RE.osw.idx",
+	"date_change": 1659741359,
+	"size": 3707,
+	"hash": "aa9bc67d96f8b9440ac643df8abbf87f"
+	},
+	{
+	"type": "file",
+	"name": "RG.osw",
+	"date_change": 1659741359,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "RG.osw.idx",
+	"date_change": 1659741360,
+	"size": 3914,
+	"hash": "e801c09baf64a2944a0826933df3c271"
+	},
+	{
+	"type": "file",
+	"name": "TK.osw",
+	"date_change": 1659741361,
+	"size": 15462,
+	"hash": "fc1179502b4313a197e05bc42e6005ba"
+	},
+	{
+	"type": "file",
+	"name": "TK.osw.idx",
+	"date_change": 1659741361,
+	"size": 2327,
+	"hash": "b10ccdf74ab7e576e082ac6f13a893a1"
+	}
+	]
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "data",
+	"size": 13280026,
+	"data": [
+	{
+	"type": "file",
+	"name": "animgrp.dat",
+	"date_change": 1659740455,
+	"size": 3096,
+	"hash": "6a484b0b2356c524207d939487f1bff1"
+	},
+	{
+	"type": "file",
+	"name": "ar_stats.dat",
+	"date_change": 1659740456,
+	"size": 3593,
+	"hash": "a98936b0f3523f23cad2eacc0eaf7a9b"
+	},
+	{
+	"type": "file",
+	"name": "carcols.dat",
+	"date_change": 1659740456,
+	"size": 15361,
+	"hash": "2b33843e79bd113873a5d0fb02157749"
+	},
+	{
+	"type": "file",
+	"name": "cargrp.dat",
+	"date_change": 1659740457,
+	"size": 3963,
+	"hash": "63138ab62a10428a7c88f0be8ece094d"
+	},
+	{
+	"type": "file",
+	"name": "carmods.dat",
+	"date_change": 1659740457,
+	"size": 9110,
+	"hash": "6cbe845361e76aae35ddca300867cadf"
+	},
+	{
+	"type": "file",
+	"name": "clothes.dat",
+	"date_change": 1659740458,
+	"size": 5317,
+	"hash": "8762637e580eb936111859ffa29bddb4"
+	},
+	{
+	"type": "file",
+	"name": "colorcycle.dat",
+	"date_change": 1659740459,
+	"size": 13612,
+	"hash": "a2340bb6f2e7f3f5de5fb88860df4ffe"
+	},
+	{
+	"type": "dir",
+	"name": "Decision",
+	"size": 77750,
+	"data": [
+	{
+	"type": "dir",
+	"name": "Allowed",
+	"size": 72438,
+	"data": [
+	{
+	"type": "file",
+	"name": "Cop.ped",
+	"date_change": 1659741719,
+	"size": 4908,
+	"hash": "2b2456482e8719e8c64877070fecee7f"
+	},
+	{
+	"type": "file",
+	"name": "Fireman.ped",
+	"date_change": 1659741719,
+	"size": 4435,
+	"hash": "99ef637f82455921c9572fede370e33b"
+	},
+	{
+	"type": "file",
+	"name": "GangMbr.ped",
+	"date_change": 1659741720,
+	"size": 6194,
+	"hash": "cd6e25e2a07fa5e1cc2f0d952c51f3af"
+	},
+	{
+	"type": "file",
+	"name": "Indoors.ped",
+	"date_change": 1659741720,
+	"size": 2809,
+	"hash": "5071731f4fd49d79b0562c7dec9a673b"
+	},
+	{
+	"type": "file",
+	"name": "MISSION.grp",
+	"date_change": 1659741721,
+	"size": 2758,
+	"hash": "837dd1e06da29bf5d7210a9074164cf2"
+	},
+	{
+	"type": "file",
+	"name": "m_empty.ped",
+	"date_change": 1659741721,
+	"size": 982,
+	"hash": "149d0c778cab34b995d3958f44eeb18b"
+	},
+	{
+	"type": "file",
+	"name": "m_norm.ped",
+	"date_change": 1659741722,
+	"size": 4142,
+	"hash": "d6ed517e1e6809c6ad0e9e2c163f410e"
+	},
+	{
+	"type": "file",
+	"name": "m_plyr.ped",
+	"date_change": 1659741722,
+	"size": 2000,
+	"hash": "50ec4c398f482bbe9428e1011b4bc0b2"
+	},
+	{
+	"type": "file",
+	"name": "m_steal.ped",
+	"date_change": 1659741722,
+	"size": 3663,
+	"hash": "ea0e40c00071a4a9446c19b12bf5a035"
+	},
+	{
+	"type": "file",
+	"name": "m_tough.ped",
+	"date_change": 1659741722,
+	"size": 3980,
+	"hash": "be9ea5daacc227b8383b9c84a5b3fa9b"
+	},
+	{
+	"type": "file",
+	"name": "m_weak.ped",
+	"date_change": 1659741723,
+	"size": 4062,
+	"hash": "03dc3abafa80abec285adc0bddee6777"
+	},
+	{
+	"type": "file",
+	"name": "RANDOM.grp",
+	"date_change": 1659741723,
+	"size": 4623,
+	"hash": "cda22c3bed5dd3742542084461082d24"
+	},
+	{
+	"type": "file",
+	"name": "RANDOM.ped",
+	"date_change": 1659741723,
+	"size": 4142,
+	"hash": "d6ed517e1e6809c6ad0e9e2c163f410e"
+	},
+	{
+	"type": "file",
+	"name": "RANDOM2.grp",
+	"date_change": 1659741723,
+	"size": 4623,
+	"hash": "25cfafb3b7da432277bfa1291df4d58d"
+	},
+	{
+	"type": "file",
+	"name": "R_Norm.ped",
+	"date_change": 1659741724,
+	"size": 6450,
+	"hash": "75d670db732344ec3f90e7db71b1e3a6"
+	},
+	{
+	"type": "file",
+	"name": "R_Tough.ped",
+	"date_change": 1659741724,
+	"size": 6378,
+	"hash": "b3e4ca143c1bbcbf99ebf70ef95e7343"
+	},
+	{
+	"type": "file",
+	"name": "R_Weak.ped",
+	"date_change": 1659741725,
+	"size": 6289,
+	"hash": "3cddd65754ad3c6ee8aec71b8a69b6c3"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "PedEvent.txt",
+	"date_change": 1659741364,
+	"size": 1216,
+	"hash": "e07f35f7bdf4af16230c33adf833c496"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "default.dat",
+	"date_change": 1659740459,
+	"size": 687,
+	"hash": "f8d7be72a31db91d23b697571b9443fb"
+	},
+	{
+	"type": "file",
+	"name": "default.ide",
+	"date_change": 1659740460,
+	"size": 4679,
+	"hash": "5b6d75bae827e2d88f24f2be66a037bb"
+	},
+	{
+	"type": "file",
+	"name": "fonts.dat",
+	"date_change": 1659740461,
+	"size": 3574,
+	"hash": "21bd57063f587cb96eb96e65a9c9a7bb"
+	},
+	{
+	"type": "file",
+	"name": "furnitur.dat",
+	"date_change": 1659740462,
+	"size": 16480,
+	"hash": "3199fc8b81a4c5334a497508fe408afd"
+	},
+	{
+	"type": "file",
+	"name": "gridref.dat",
+	"date_change": 1659740462,
+	"size": 1498,
+	"hash": "795a9c013ee683e286768e06e4a5e2d7"
+	},
+	{
+	"type": "file",
+	"name": "gta.dat",
+	"date_change": 1659740463,
+	"size": 3776,
+	"hash": "2d2e4f7f05e2d82b25c88707096d3393"
+	},
+	{
+	"type": "file",
+	"name": "handling.cfg",
+	"date_change": 1659740464,
+	"size": 64532,
+	"hash": "351ef92fc22fa3c1042dd26b1cd73a30"
+	},
+	{
+	"type": "file",
+	"name": "info.zon",
+	"date_change": 1659740465,
+	"size": 28139,
+	"hash": "7df10bed5404a2f7669cdfaa47b8b81b"
+	},
+	{
+	"type": "file",
+	"name": "map.zon",
+	"date_change": 1659740466,
+	"size": 436,
+	"hash": "79d255c7a27bb49b50d680390e908e5a"
+	},
+	{
+	"type": "dir",
+	"name": "maps",
+	"size": 9991472,
+	"data": [
+	{
+	"type": "dir",
+	"name": "accessories",
+	"size": 8070,
+	"data": [
+	{
+	"type": "file",
+	"name": "accessories.ide",
+	"date_change": 1659741727,
+	"size": 8070,
+	"hash": "0963e65ea611a9745242e1a9d3d7e89a"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "Audiozon.ipl",
+	"date_change": 1659741367,
+	"size": 10802,
+	"hash": "bc3d7fc5a6927b61c10acda92e7e20c0"
+	},
+	{
+	"type": "dir",
+	"name": "country",
+	"size": 302189,
+	"data": [
+	{
+	"type": "file",
+	"name": "countn2.ide",
+	"date_change": 1659741728,
+	"size": 35439,
+	"hash": "a962748a2b61e10e927cb6238ef4df80"
+	},
+	{
+	"type": "file",
+	"name": "countn2.ipl",
+	"date_change": 1659741728,
+	"size": 41665,
+	"hash": "0727df5077b9a6bb7e3e23c1c3990da9"
+	},
+	{
+	"type": "file",
+	"name": "countrye.ide",
+	"date_change": 1659741729,
+	"size": 34529,
+	"hash": "6b46395e665582255b67b5082ad7f667"
+	},
+	{
+	"type": "file",
+	"name": "countrye.ipl",
+	"date_change": 1659741729,
+	"size": 49301,
+	"hash": "5033cf4354baaad2a521031a1b318df0"
+	},
+	{
+	"type": "file",
+	"name": "countryN.ide",
+	"date_change": 1659741729,
+	"size": 11308,
+	"hash": "ad384494c4d2d94683d2c51cef390395"
+	},
+	{
+	"type": "file",
+	"name": "countryN.ipl",
+	"date_change": 1659741730,
+	"size": 14407,
+	"hash": "443490bda181e7f87e74fcc7704f2500"
+	},
+	{
+	"type": "file",
+	"name": "countryS.ide",
+	"date_change": 1659741730,
+	"size": 18450,
+	"hash": "85792d5a12621e879cc59ed87db82480"
+	},
+	{
+	"type": "file",
+	"name": "countryS.ipl",
+	"date_change": 1659741731,
+	"size": 33835,
+	"hash": "8d1bd4b5d337139ff3a953d44fc2b0e3"
+	},
+	{
+	"type": "file",
+	"name": "countryW.ide",
+	"date_change": 1659741731,
+	"size": 19704,
+	"hash": "b8d0fdd9f7223ded76f4b5f6700fcb6f"
+	},
+	{
+	"type": "file",
+	"name": "countryw.ipl",
+	"date_change": 1659741732,
+	"size": 35057,
+	"hash": "a46e0560ee61446cbb4d531d99dec553"
+	},
+	{
+	"type": "file",
+	"name": "counxref.ide",
+	"date_change": 1659741732,
+	"size": 8494,
+	"hash": "67473a3c459f7b3998b498190b72cf62"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "cull.ipl",
+	"date_change": 1659741368,
+	"size": 104318,
+	"hash": "7d723b80560f956bddb8d97ed66086b8"
+	},
+	{
+	"type": "dir",
+	"name": "generic",
+	"size": 34395,
+	"data": [
+	{
+	"type": "file",
+	"name": "barriers.ide",
+	"date_change": 1659741734,
+	"size": 1437,
+	"hash": "d22010cd9522b19bf07efbc421872add"
+	},
+	{
+	"type": "file",
+	"name": "dynamic.ide",
+	"date_change": 1659741734,
+	"size": 4611,
+	"hash": "319e6aea03de0c05e075a1f15ed1ce8c"
+	},
+	{
+	"type": "file",
+	"name": "dynamic2.ide",
+	"date_change": 1659741735,
+	"size": 10510,
+	"hash": "84b33bece396644d2b197320d0ea9886"
+	},
+	{
+	"type": "file",
+	"name": "multiobj.ide",
+	"date_change": 1659741735,
+	"size": 5020,
+	"hash": "63d672310c0cf0efaa8b96c584dd407a"
+	},
+	{
+	"type": "file",
+	"name": "procobj.ide",
+	"date_change": 1659741736,
+	"size": 4755,
+	"hash": "bf592e31a663405116a68b63e7d2c49f"
+	},
+	{
+	"type": "file",
+	"name": "vegepart.ide",
+	"date_change": 1659741736,
+	"size": 8062,
+	"hash": "b9c84559de97b49ce2036498b3d504d5"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "interior",
+	"size": 144912,
+	"data": [
+	{
+	"type": "file",
+	"name": "gen_int1.ide",
+	"date_change": 1659741738,
+	"size": 2747,
+	"hash": "8cdc36bf580a82bf281c9d3a257d4742"
+	},
+	{
+	"type": "file",
+	"name": "gen_int1.ipl",
+	"date_change": 1659741738,
+	"size": 21074,
+	"hash": "eb13aff288ed3876354a326a22f29d93"
+	},
+	{
+	"type": "file",
+	"name": "gen_int2.ide",
+	"date_change": 1659741739,
+	"size": 10941,
+	"hash": "9b55e0b126ef22f3703b5ccf5bb1b174"
+	},
+	{
+	"type": "file",
+	"name": "gen_int2.ipl",
+	"date_change": 1659741739,
+	"size": 1683,
+	"hash": "5efb82b23a9462cbf4c1d0ba6dbc9fd4"
+	},
+	{
+	"type": "file",
+	"name": "gen_int3.ide",
+	"date_change": 1659741739,
+	"size": 3252,
+	"hash": "5119e846419e50bbc35bd57415d4376e"
+	},
+	{
+	"type": "file",
+	"name": "gen_int3.ipl",
+	"date_change": 1659741739,
+	"size": 2091,
+	"hash": "e14d644ed3a26d5711704f875f2c11e1"
+	},
+	{
+	"type": "file",
+	"name": "gen_int4.ide",
+	"date_change": 1659741740,
+	"size": 2323,
+	"hash": "16c7dba5af8ae61172599f29ed9dd6c0"
+	},
+	{
+	"type": "file",
+	"name": "gen_int4.ipl",
+	"date_change": 1659741740,
+	"size": 1185,
+	"hash": "339028d9c3aac53a8a28212179fced01"
+	},
+	{
+	"type": "file",
+	"name": "gen_int5.ide",
+	"date_change": 1659741741,
+	"size": 4682,
+	"hash": "1f183baa44e0b759c2917c34ac23d3b5"
+	},
+	{
+	"type": "file",
+	"name": "gen_int5.ipl",
+	"date_change": 1659741741,
+	"size": 2988,
+	"hash": "0acd219bca22d7cb8c8b50d738c3275c"
+	},
+	{
+	"type": "file",
+	"name": "gen_intb.ide",
+	"date_change": 1659741741,
+	"size": 5459,
+	"hash": "48a554b28c8045c21b6ed0905a76768f"
+	},
+	{
+	"type": "file",
+	"name": "gen_intb.ipl",
+	"date_change": 1659741741,
+	"size": 1626,
+	"hash": "663b75b0898db03687d5e6edb1d3b7f8"
+	},
+	{
+	"type": "file",
+	"name": "int_cont.ide",
+	"date_change": 1659741742,
+	"size": 385,
+	"hash": "f811cdbcfd62ad7c8bf4be61c2d89855"
+	},
+	{
+	"type": "file",
+	"name": "int_cont.ipl",
+	"date_change": 1659741742,
+	"size": 910,
+	"hash": "5331b6ee9cbf7a976f98dc2cce6992e3"
+	},
+	{
+	"type": "file",
+	"name": "int_LA.ide",
+	"date_change": 1659741742,
+	"size": 6004,
+	"hash": "ee9a394ae0ce8cf6f77fb82c758d7c89"
+	},
+	{
+	"type": "file",
+	"name": "int_LA.ipl",
+	"date_change": 1659741743,
+	"size": 1312,
+	"hash": "2ae3c352e5de6e290dc631da053c5cfc"
+	},
+	{
+	"type": "file",
+	"name": "int_SF.ide",
+	"date_change": 1659741743,
+	"size": 1260,
+	"hash": "cdfdb64d5254a0fc689604d000d0e29c"
+	},
+	{
+	"type": "file",
+	"name": "int_SF.ipl",
+	"date_change": 1659741743,
+	"size": 1334,
+	"hash": "3e8cf0138f81f0c505f245e7bbff8b28"
+	},
+	{
+	"type": "file",
+	"name": "int_veg.ide",
+	"date_change": 1659741744,
+	"size": 4684,
+	"hash": "3ffe6a366fcadba1a2fb3fb8166ceb31"
+	},
+	{
+	"type": "file",
+	"name": "int_veg.ipl",
+	"date_change": 1659741744,
+	"size": 5299,
+	"hash": "8d8030efa3a493324016a395fd180926"
+	},
+	{
+	"type": "file",
+	"name": "propext.ide",
+	"date_change": 1659741744,
+	"size": 2340,
+	"hash": "be0f534711073a19378cd30231b9d094"
+	},
+	{
+	"type": "file",
+	"name": "props.ide",
+	"date_change": 1659741745,
+	"size": 26326,
+	"hash": "b7ca66885d4fc34fe2f2083f8ed5d725"
+	},
+	{
+	"type": "file",
+	"name": "props2.ide",
+	"date_change": 1659741745,
+	"size": 21174,
+	"hash": "043a304b604db2e22d7464bcc36a41ce"
+	},
+	{
+	"type": "file",
+	"name": "savehous.ide",
+	"date_change": 1659741745,
+	"size": 1724,
+	"hash": "19af45eb13708b6b3ed9434a42e6a929"
+	},
+	{
+	"type": "file",
+	"name": "savehous.ipl",
+	"date_change": 1659741746,
+	"size": 2959,
+	"hash": "2e79a68217244d7d99f3790b63fe3267"
+	},
+	{
+	"type": "file",
+	"name": "stadint.ide",
+	"date_change": 1659741746,
+	"size": 2851,
+	"hash": "10953f74890c554dd368ff20bdbeac3d"
+	},
+	{
+	"type": "file",
+	"name": "stadint.ipl",
+	"date_change": 1659741746,
+	"size": 6299,
+	"hash": "242ece3c9c070faf6751e66bfb17531c"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "LA",
+	"size": 375865,
+	"data": [
+	{
+	"type": "file",
+	"name": "LAe.ide",
+	"date_change": 1659741749,
+	"size": 12249,
+	"hash": "6f046fe75467807c612c7f5f0d9bc90f"
+	},
+	{
+	"type": "file",
+	"name": "LAe.ipl",
+	"date_change": 1659741749,
+	"size": 27328,
+	"hash": "fa95160d9826c195e1b9d5128c20b35f"
+	},
+	{
+	"type": "file",
+	"name": "LAe2.ide",
+	"date_change": 1659741750,
+	"size": 21907,
+	"hash": "b0c016f4d0c9a914894055787146eb0c"
+	},
+	{
+	"type": "file",
+	"name": "LAe2.ipl",
+	"date_change": 1659741750,
+	"size": 33651,
+	"hash": "ffa2c90e439f5bd7da317c1ad29a9495"
+	},
+	{
+	"type": "file",
+	"name": "LAhills.ide",
+	"date_change": 1659741750,
+	"size": 10601,
+	"hash": "7b9289601c4961f461dd1f2d8b2cc0fa"
+	},
+	{
+	"type": "file",
+	"name": "LAhills.ipl",
+	"date_change": 1659741750,
+	"size": 34506,
+	"hash": "4c30d0186a0c65d5be31f5a45965003a"
+	},
+	{
+	"type": "file",
+	"name": "LAn.ide",
+	"date_change": 1659741751,
+	"size": 11107,
+	"hash": "b24ce30c982c7bc5b8fafc58b97c0dd7"
+	},
+	{
+	"type": "file",
+	"name": "LAn.ipl",
+	"date_change": 1659741751,
+	"size": 14264,
+	"hash": "3f3a9e01ca47388ed62e7bd10527572f"
+	},
+	{
+	"type": "file",
+	"name": "LAn2.ide",
+	"date_change": 1659741752,
+	"size": 9565,
+	"hash": "b11043b49c9c71095a9cad47d81418cf"
+	},
+	{
+	"type": "file",
+	"name": "LAn2.ipl",
+	"date_change": 1659741752,
+	"size": 13185,
+	"hash": "dbcd933c5857dab676715b930f3eef1f"
+	},
+	{
+	"type": "file",
+	"name": "LAs.ide",
+	"date_change": 1659741752,
+	"size": 12575,
+	"hash": "f73f76648dc35e2b7eed800bcf699757"
+	},
+	{
+	"type": "file",
+	"name": "LAs.ipl",
+	"date_change": 1659741752,
+	"size": 22414,
+	"hash": "4540df6c3a170ab9b4ff3acce5a9674f"
+	},
+	{
+	"type": "file",
+	"name": "LAs2.ide",
+	"date_change": 1659741753,
+	"size": 12364,
+	"hash": "d6f69e02992be26e5606fe1b3d6c8be5"
+	},
+	{
+	"type": "file",
+	"name": "LAs2.ipl",
+	"date_change": 1659741753,
+	"size": 38441,
+	"hash": "cf63399c3f61e8a93e0e8dc7a09e766b"
+	},
+	{
+	"type": "file",
+	"name": "LAw.ide",
+	"date_change": 1659741754,
+	"size": 9412,
+	"hash": "b1537a83c3758ef87b219cd3dcd8c7e4"
+	},
+	{
+	"type": "file",
+	"name": "LAw.ipl",
+	"date_change": 1659741754,
+	"size": 15105,
+	"hash": "1bfe3e1fabd610dc76ab0b44e26dacc6"
+	},
+	{
+	"type": "file",
+	"name": "LAw2.ide",
+	"date_change": 1659741754,
+	"size": 11060,
+	"hash": "91ce9890027ca87158a5328417689004"
+	},
+	{
+	"type": "file",
+	"name": "LAw2.ipl",
+	"date_change": 1659741754,
+	"size": 18232,
+	"hash": "f220195b871833163f5c04856b03ae8d"
+	},
+	{
+	"type": "file",
+	"name": "LaWn.ide",
+	"date_change": 1659741755,
+	"size": 13092,
+	"hash": "235545b8eb93dcffcb70c1dc2ff6d5fe"
+	},
+	{
+	"type": "file",
+	"name": "LaWn.ipl",
+	"date_change": 1659741755,
+	"size": 24330,
+	"hash": "0720120f5c025757ece1344df0d85a30"
+	},
+	{
+	"type": "file",
+	"name": "LAxref.ide",
+	"date_change": 1659741756,
+	"size": 10477,
+	"hash": "142a27d9f570081e2378c45d1749d550"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "leveldes",
+	"size": 53672,
+	"data": [
+	{
+	"type": "file",
+	"name": "leveldes.ide",
+	"date_change": 1659741758,
+	"size": 360,
+	"hash": "521496c7b8e148bf65e15a2eb9cffdba"
+	},
+	{
+	"type": "file",
+	"name": "leveldes.ipl",
+	"date_change": 1659741758,
+	"size": 165,
+	"hash": "4276ccba517ef022c45b39608699a8af"
+	},
+	{
+	"type": "file",
+	"name": "levelmap.ide",
+	"date_change": 1659741758,
+	"size": 3194,
+	"hash": "8ea3bf7c907763418a32fd7b42249d96"
+	},
+	{
+	"type": "file",
+	"name": "levelmap.ipl",
+	"date_change": 1659741758,
+	"size": 4675,
+	"hash": "4fb15ec9a9bd76e47842e01cdefa2585"
+	},
+	{
+	"type": "file",
+	"name": "levelxre.ide",
+	"date_change": 1659741759,
+	"size": 9897,
+	"hash": "4dda3ffcee83f83ca554d85817e52198"
+	},
+	{
+	"type": "file",
+	"name": "seabed.ide",
+	"date_change": 1659741759,
+	"size": 12039,
+	"hash": "0779f538229decee62071e53f41d4b93"
+	},
+	{
+	"type": "file",
+	"name": "seabed.ipl",
+	"date_change": 1659741760,
+	"size": 23342,
+	"hash": "fbedb38d8860a71d63d30e4c0f458c86"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "occlu.ipl",
+	"date_change": 1659741368,
+	"size": 1012,
+	"hash": "fbe5264b558576cff738291bc17a9c51"
+	},
+	{
+	"type": "file",
+	"name": "occluint.ipl",
+	"date_change": 1659741369,
+	"size": 2338,
+	"hash": "e89a5ae5ee074086862664b50f6881f5"
+	},
+	{
+	"type": "file",
+	"name": "occluLA.ipl",
+	"date_change": 1659741370,
+	"size": 35956,
+	"hash": "a355e96c0102c3187fe75da90572b3f2"
+	},
+	{
+	"type": "file",
+	"name": "occlusf.ipl",
+	"date_change": 1659741370,
+	"size": 16114,
+	"hash": "9ac2fb7ddddfe7f71a4faad8f71a7b98"
+	},
+	{
+	"type": "file",
+	"name": "occluveg.ipl",
+	"date_change": 1659741371,
+	"size": 17944,
+	"hash": "394dc4170c928d4227f9c0e185d51261"
+	},
+	{
+	"type": "file",
+	"name": "paths.ipl",
+	"date_change": 1659741374,
+	"size": 2658607,
+	"hash": "37426c7d5218aa13aaec2f582aaaabc4"
+	},
+	{
+	"type": "file",
+	"name": "paths2.ipl",
+	"date_change": 1659741376,
+	"size": 2292241,
+	"hash": "b38219724ec5eaa1dba1df4331389509"
+	},
+	{
+	"type": "file",
+	"name": "paths3.ipl",
+	"date_change": 1659741379,
+	"size": 2428066,
+	"hash": "1f5f7a824575552057fe7001c54c51a9"
+	},
+	{
+	"type": "file",
+	"name": "paths4.ipl",
+	"date_change": 1659741377,
+	"size": 253014,
+	"hash": "73c948a8d373623524b4fca8a2b9c25a"
+	},
+	{
+	"type": "file",
+	"name": "paths5.ipl",
+	"date_change": 1659741378,
+	"size": 457678,
+	"hash": "8f3d100baff8ee2088d0b74474175250"
+	},
+	{
+	"type": "dir",
+	"name": "pubg",
+	"size": 137580,
+	"data": [
+	{
+	"type": "file",
+	"name": "pubg.ide",
+	"date_change": 1659741762,
+	"size": 6742,
+	"hash": "befef202efad51a6e50acd89298bdea2"
+	},
+	{
+	"type": "file",
+	"name": "pubg.ipl",
+	"date_change": 1659741762,
+	"size": 130838,
+	"hash": "02174a1ddaf2ca209e457b340eaf4bf8"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "SF",
+	"size": 271205,
+	"data": [
+	{
+	"type": "file",
+	"name": "SFe.ide",
+	"date_change": 1659741765,
+	"size": 16224,
+	"hash": "9895ef705b1c3b6dee56cc0f613b4be9"
+	},
+	{
+	"type": "file",
+	"name": "SFe.ipl",
+	"date_change": 1659741764,
+	"size": 26707,
+	"hash": "da55b24ac305b2779f46cc1509f444d8"
+	},
+	{
+	"type": "file",
+	"name": "SFn.ide",
+	"date_change": 1659741765,
+	"size": 11219,
+	"hash": "27566b5a6dce82513cfdcf65c82ca958"
+	},
+	{
+	"type": "file",
+	"name": "SFn.ipl",
+	"date_change": 1659741766,
+	"size": 26201,
+	"hash": "a2133c436d46396b4e1511a33bcb8870"
+	},
+	{
+	"type": "file",
+	"name": "SFs.ide",
+	"date_change": 1659741766,
+	"size": 18948,
+	"hash": "5ff7f62b82d1c3e9cae944afbed0f6d0"
+	},
+	{
+	"type": "file",
+	"name": "SFs.ipl",
+	"date_change": 1659741766,
+	"size": 37969,
+	"hash": "518077ea0974332c8352eb9af931d197"
+	},
+	{
+	"type": "file",
+	"name": "SFSe.ide",
+	"date_change": 1659741766,
+	"size": 30227,
+	"hash": "e153a491cd396f3ab0696107e053a32d"
+	},
+	{
+	"type": "file",
+	"name": "SFSe.ipl",
+	"date_change": 1659741767,
+	"size": 53359,
+	"hash": "b275b70372a6d91643e3f585325f8ddc"
+	},
+	{
+	"type": "file",
+	"name": "SFw.ide",
+	"date_change": 1659741767,
+	"size": 16473,
+	"hash": "4103fe4fffa18c4845027fb3d7929296"
+	},
+	{
+	"type": "file",
+	"name": "SFw.ipl",
+	"date_change": 1659741768,
+	"size": 29247,
+	"hash": "e435f3d83ef4abcc4ce56c41767601ee"
+	},
+	{
+	"type": "file",
+	"name": "SFxref.ide",
+	"date_change": 1659741768,
+	"size": 4631,
+	"hash": "23b00cc73b9564f739730c61a232353d"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "tuning",
+	"size": 2254,
+	"data": [
+	{
+	"type": "file",
+	"name": "custom_obj.ide",
+	"date_change": 1659741771,
+	"size": 2254,
+	"hash": "316554cb3bf5b48199b73e0cfff42676"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "tunnels.ipl",
+	"date_change": 1659741379,
+	"size": 3230,
+	"hash": "1438622c076f6122ff6cdd03241b638c"
+	},
+	{
+	"type": "dir",
+	"name": "vegas",
+	"size": 290726,
+	"data": [
+	{
+	"type": "file",
+	"name": "vegasE.ide",
+	"date_change": 1659741771,
+	"size": 35542,
+	"hash": "be3e059ba348f994e320e1e366752031"
+	},
+	{
+	"type": "file",
+	"name": "vegasE.ipl",
+	"date_change": 1659741772,
+	"size": 61084,
+	"hash": "ea279d9a9d6e3addb981b5186da91424"
+	},
+	{
+	"type": "file",
+	"name": "VegasN.ide",
+	"date_change": 1659741772,
+	"size": 23715,
+	"hash": "6a35f16ac1b76f151be42c3860c81ffd"
+	},
+	{
+	"type": "file",
+	"name": "vegasN.ipl",
+	"date_change": 1659741772,
+	"size": 36651,
+	"hash": "e6b6cc52ad19a5e93a45d659019f7b41"
+	},
+	{
+	"type": "file",
+	"name": "VegasS.ide",
+	"date_change": 1659741773,
+	"size": 18656,
+	"hash": "ed0cca34a8fdc556a7ca835ee0923b58"
+	},
+	{
+	"type": "file",
+	"name": "vegasS.ipl",
+	"date_change": 1659741773,
+	"size": 30343,
+	"hash": "ce4cb524d5bee74bab77029e5541b1ae"
+	},
+	{
+	"type": "file",
+	"name": "VegasW.ide",
+	"date_change": 1659741773,
+	"size": 25456,
+	"hash": "593313a65eb9f8905c61bd02296e4468"
+	},
+	{
+	"type": "file",
+	"name": "vegasW.ipl",
+	"date_change": 1659741774,
+	"size": 49867,
+	"hash": "43989ba645119a9b287fb0e3782245e7"
+	},
+	{
+	"type": "file",
+	"name": "vegaxref.ide",
+	"date_change": 1659741774,
+	"size": 5751,
+	"hash": "61c9cd72a43ca6f34788c4bde736431e"
+	},
+	{
+	"type": "file",
+	"name": "vegaxref.ipl",
+	"date_change": 1659741774,
+	"size": 3661,
+	"hash": "789520fd41a60f0067c802c6f00d021b"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "veh_mods",
+	"size": 64708,
+	"data": [
+	{
+	"type": "file",
+	"name": "veh_mods.ide",
+	"date_change": 1659741777,
+	"size": 64708,
+	"hash": "18e60c44e6354e7edaa1c919836e387f"
+	}
+	]
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "melee.dat",
+	"date_change": 1659740466,
+	"size": 6306,
+	"hash": "b2f05657980e4a693f8ff5eadcbad8f8"
+	},
+	{
+	"type": "file",
+	"name": "object.dat",
+	"date_change": 1659740468,
+	"size": 126118,
+	"hash": "46a5e7dff90078842e24d9de5e92cc3e"
+	},
+	{
+	"type": "dir",
+	"name": "paths",
+	"size": 2412593,
+	"data": [
+	{
+	"type": "file",
+	"name": "carrec.img",
+	"date_change": 1659741383,
+	"size": 2357248,
+	"hash": "7f94ccaf1d647f581cce81a821dff2cb"
+	},
+	{
+	"type": "file",
+	"name": "ROADBLOX.DAT",
+	"date_change": 1659741381,
+	"size": 1304,
+	"hash": "2dbd1fa4fc98e4cd0d84e647b3a12fa6"
+	},
+	{
+	"type": "file",
+	"name": "tracks.dat",
+	"date_change": 1659741382,
+	"size": 25474,
+	"hash": "16b7c65078f262893e18a5d626bbedbd"
+	},
+	{
+	"type": "file",
+	"name": "tracks2.dat",
+	"date_change": 1659741382,
+	"size": 1892,
+	"hash": "f5c1f87d1ae814a12a2aeb51e4ef27e0"
+	},
+	{
+	"type": "file",
+	"name": "tracks3.dat",
+	"date_change": 1659741383,
+	"size": 8328,
+	"hash": "fc3e3e450c92a0cdcdf6d5bf26dda212"
+	},
+	{
+	"type": "file",
+	"name": "tracks4.dat",
+	"date_change": 1659741384,
+	"size": 18347,
+	"hash": "10066144ef14c40fff4d5bd3cc147360"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "ped.dat",
+	"date_change": 1659740468,
+	"size": 1276,
+	"hash": "67d960dde13228d4818e0f144adafe4e"
+	},
+	{
+	"type": "file",
+	"name": "pedgrp.dat",
+	"date_change": 1659740469,
+	"size": 5792,
+	"hash": "fa1731066423ba0c584e757eda946f15"
+	},
+	{
+	"type": "file",
+	"name": "peds.ide",
+	"date_change": 1659740470,
+	"size": 33401,
+	"hash": "f7dea69fa6ab973479b9ef0cf05d3d98"
+	},
+	{
+	"type": "file",
+	"name": "pedstats.dat",
+	"date_change": 1659740471,
+	"size": 3604,
+	"hash": "d722c90c92f3ad5c1b531596769f61cd"
+	},
+	{
+	"type": "file",
+	"name": "plants.dat",
+	"date_change": 1659740472,
+	"size": 9887,
+	"hash": "a2713338dbbd55898a4195e4464c6b06"
+	},
+	{
+	"type": "file",
+	"name": "popcycle.dat",
+	"date_change": 1659740473,
+	"size": 127108,
+	"hash": "a43f90361d1034c819a602171d8d66cb"
+	},
+	{
+	"type": "file",
+	"name": "procobj.dat",
+	"date_change": 1659740474,
+	"size": 10019,
+	"hash": "7229fa03d65f135bd569c3692d67c4b3"
+	},
+	{
+	"type": "file",
+	"name": "shopping.dat",
+	"date_change": 1659740475,
+	"size": 46875,
+	"hash": "c1086eb6c0bfa36845f2026b68519f14"
+	},
+	{
+	"type": "file",
+	"name": "statdisp.dat",
+	"date_change": 1659740475,
+	"size": 7292,
+	"hash": "3a6cabab2094de3e0b3810a40e24194c"
+	},
+	{
+	"type": "file",
+	"name": "surface.dat",
+	"date_change": 1659740476,
+	"size": 576,
+	"hash": "9eb4e4e474abd5da2f3961a5ef549f9e"
+	},
+	{
+	"type": "file",
+	"name": "surfaud.dat",
+	"date_change": 1659740476,
+	"size": 6530,
+	"hash": "c32c586e8ba35742e356e6525619f7c3"
+	},
+	{
+	"type": "file",
+	"name": "surfinfo.dat",
+	"date_change": 1659740477,
+	"size": 28106,
+	"hash": "605dd0beabccc797ce94a51a3e4a09eb"
+	},
+	{
+	"type": "file",
+	"name": "timecyc.dat",
+	"date_change": 1659740478,
+	"size": 40037,
+	"hash": "d66a121bc8f17a5b69e34b841744956c"
+	},
+	{
+	"type": "file",
+	"name": "txdcut.ide",
+	"date_change": 1659740479,
+	"size": 478,
+	"hash": "e3c231039048a30680b8f13fb51cc4ac"
+	},
+	{
+	"type": "file",
+	"name": "vehicles.ide",
+	"date_change": 1659740479,
+	"size": 21093,
+	"hash": "bdc3a0fced2402c5bc61585714457d4b"
+	},
+	{
+	"type": "file",
+	"name": "water.dat",
+	"date_change": 1659740480,
+	"size": 70099,
+	"hash": "690400ecc92169d9eaddaaa948903efb"
+	},
+	{
+	"type": "file",
+	"name": "water1.dat",
+	"date_change": 1659740481,
+	"size": 60063,
+	"hash": "16fe5a3e8c57d02eb62a44a96d8b9d39"
+	},
+	{
+	"type": "file",
+	"name": "weapon.dat",
+	"date_change": 1659740482,
+	"size": 11602,
+	"hash": "28f518b60b7b77bbe6d7cbe3fad594c2"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "fonts",
+	"size": 3621420,
+	"data": [
+	{
+	"type": "file",
+	"name": "arial.ttf",
+	"date_change": 1659740485,
+	"size": 367112,
+	"hash": "5995c725ca5a13be62d3dc75c2fc59fc"
+	},
+	{
+	"type": "file",
+	"name": "arial_bold.ttf",
+	"date_change": 1659740486,
+	"size": 352224,
+	"hash": "ce4244a1fb311a47a5949948b2dc4eab"
+	},
+	{
+	"type": "file",
+	"name": "georgia.ttf",
+	"date_change": 1659740487,
+	"size": 219712,
+	"hash": "ca8446d58eb8315c7a458caf81c6ed86"
+	},
+	{
+	"type": "file",
+	"name": "impact.ttf",
+	"date_change": 1659740487,
+	"size": 206784,
+	"hash": "f12902024f7b77ee4c34557ee6f3818b"
+	},
+	{
+	"type": "file",
+	"name": "palatino_linotype.ttf",
+	"date_change": 1659740488,
+	"size": 489884,
+	"hash": "96261bb90c9babbf8042ce7f43200d65"
+	},
+	{
+	"type": "file",
+	"name": "quartz_ms.ttf",
+	"date_change": 1659740489,
+	"size": 51032,
+	"hash": "7df4d03e072bfaf9685f06ed5d179aff"
+	},
+	{
+	"type": "file",
+	"name": "segoe_print.ttf",
+	"date_change": 1659740490,
+	"size": 172448,
+	"hash": "d7abfa52675c67654ecc2a8213bc58ae"
+	},
+	{
+	"type": "file",
+	"name": "segoe_script.ttf",
+	"date_change": 1659740491,
+	"size": 620204,
+	"hash": "5c452fb7a0f5751f4e94e9d84eb01154"
+	},
+	{
+	"type": "file",
+	"name": "tahoma.ttf",
+	"date_change": 1659740492,
+	"size": 939280,
+	"hash": "013ec165105a40eb43bc1130d530bd1f"
+	},
+	{
+	"type": "file",
+	"name": "webdings.ttf",
+	"date_change": 1659740493,
+	"size": 120560,
+	"hash": "df1c5a5ce47c99504c1efe6f5421c7ba"
+	},
+	{
+	"type": "file",
+	"name": "wingding.ttf",
+	"date_change": 1659740494,
+	"size": 82180,
+	"hash": "d9f147b4c366da5940876fd47992c4d2"
+	}
+	]
+	},
+	{
+	"type": "res",
+	"name": "gta_sa.set",
+	"date_change": 1659740439,
+	"size": 167,
+	"hash": "a7df452c7c32ef193e83b2afbe94e7b8"
+	},
+	{
+	"type": "dir",
+	"name": "models",
+	"size": 639841,
+	"data": [
+	{
+	"type": "dir",
+	"name": "coll",
+	"size": 23133,
+	"data": [
+	{
+	"type": "file",
+	"name": "peds.col",
+	"date_change": 1661723776,
+	"size": 21477,
+	"hash": "74288cbdd843c3cfb77b036a5614ae9d"
+	},
+	{
+	"type": "file",
+	"name": "vehicles.col",
+	"date_change": 1659741386,
+	"size": 1096,
+	"hash": "c84c1a1b67d5fad3df75dd8d45fc576b"
+	},
+	{
+	"type": "file",
+	"name": "weapons.col",
+	"date_change": 1659741386,
+	"size": 560,
+	"hash": "510e74e32b323eee54dd7a243b073808"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "effects.fxp",
+	"date_change": 1659740497,
+	"size": 616708,
+	"hash": "94babd9e6ec73bf5d9926e041e708c4f"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "SAMP",
+	"size": 738136,
+	"data": [
+	{
+	"type": "file",
+	"name": "carmods.dat",
+	"date_change": 1659740500,
+	"size": 35161,
+	"hash": "bbe0736b39a3545c82c76400b5bfddcf"
+	},
+	{
+	"type": "file",
+	"name": "gta.dat",
+	"date_change": 1659740500,
+	"size": 3848,
+	"hash": "2bd46e965a26ede3d24dfa1212ca5db0"
+	},
+	{
+	"type": "file",
+	"name": "handling.cfg",
+	"date_change": 1659740501,
+	"size": 114153,
+	"hash": "99ef5fee071ff8556b9048faa9e4bbe9"
+	},
+	{
+	"type": "file",
+	"name": "main.scm",
+	"date_change": 1659740502,
+	"size": 96997,
+	"hash": "c9ef3143ddc27b883a537d24cd90f1d8"
+	},
+	{
+	"type": "dir",
+	"name": "maps",
+	"size": 57416,
+	"data": [
+	{
+	"type": "dir",
+	"name": "interior",
+	"size": 26326,
+	"data": [
+	{
+	"type": "file",
+	"name": "props.ide",
+	"date_change": 1659741778,
+	"size": 26326,
+	"hash": "d6830d3574873b8f24d863387cf5ebd9"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "la",
+	"size": 31090,
+	"data": [
+	{
+	"type": "file",
+	"name": "lan2.ide",
+	"date_change": 1659741779,
+	"size": 9552,
+	"hash": "23ba133dbaccbb1ccdaea06e6160a287"
+	},
+	{
+	"type": "file",
+	"name": "law2.ide",
+	"date_change": 1659741779,
+	"size": 11059,
+	"hash": "7f8ce49ae5de62ecf760d3c02f42db35"
+	},
+	{
+	"type": "file",
+	"name": "laxref.ide",
+	"date_change": 1659741780,
+	"size": 10479,
+	"hash": "b27d4a1286c65bc724ada913fe7cf7df"
+	}
+	]
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "peds.ide",
+	"date_change": 1659740503,
+	"size": 36369,
+	"hash": "28ebe8711e4f25f06b0c950b2ef15317"
+	},
+	{
+	"type": "file",
+	"name": "SAMP.ide",
+	"date_change": 1661723777,
+	"size": 122203,
+	"hash": "0c22bfdcf3cf8fad756ce847bb5ee5ff"
+	},
+	{
+	"type": "file",
+	"name": "script.img",
+	"date_change": 1659740504,
+	"size": 184320,
+	"hash": "89a033d7aa51fef232d99fc8edabf384"
+	},
+	{
+	"type": "file",
+	"name": "TIMECYC.DAT",
+	"date_change": 1659740505,
+	"size": 40037,
+	"hash": "d66a121bc8f17a5b69e34b841744956c"
+	},
+	{
+	"type": "file",
+	"name": "tracks2.dat",
+	"date_change": 1659740506,
+	"size": 3,
+	"hash": "b0da173b6bf0d0d34e35103f30fc4b69"
+	},
+	{
+	"type": "file",
+	"name": "tracks4.dat",
+	"date_change": 1659740506,
+	"size": 3,
+	"hash": "b0da173b6bf0d0d34e35103f30fc4b69"
+	},
+	{
+	"type": "file",
+	"name": "vehicles.ide",
+	"date_change": 1659740507,
+	"size": 47455,
+	"hash": "418dc2ad036fa627e56b85c6b90c4826"
+	},
+	{
+	"type": "file",
+	"name": "water12.dat",
+	"date_change": 1659740508,
+	"size": 171,
+	"hash": "78ff3827b83b67a1f5326d158b12101b"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "stream.ini",
+	"date_change": 1659740439,
+	"size": 197,
+	"hash": "05b6fdb1ff98a4ec75a58536a0c47b5e"
+	},
+	{
+	"type": "dir",
+	"name": "texdb",
+	"size": 4760201649,
+	"data": [
+	{
+	"type": "dir",
+	"name": "accessories",
+	"size": 28296487,
+	"data": [
+	{
+	"type": "file",
+	"name": "accessories.pvr.dat",
+	"date_change": 1659872515,
+	"size": 9428056,
+	"hash": "d7f4ec45944c5f354e3c898740b08ad0"
+	},
+	{
+	"type": "file",
+	"name": "accessories.pvr.tmb",
+	"date_change": 1659872506,
+	"size": 3040,
+	"hash": "fd23a4409dd526a10a73f04bde6a7882"
+	},
+	{
+	"type": "file",
+	"name": "accessories.pvr.toc",
+	"date_change": 1659872507,
+	"size": 180,
+	"hash": "ad907b06c2bc6c860e314a3211ae4a74"
+	},
+	{
+	"type": "file",
+	"name": "accessories.txt",
+	"date_change": 1659741389,
+	"size": 2659,
+	"hash": "02accdbf86d74daa5f38f04c2c01943d"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "accessories.img",
+	"date_change": 1659740512,
+	"size": 2551808,
+	"hash": "7ec84488c890479f86f3b93fc79e57f2"
+	},
+	{
+	"type": "dir",
+	"name": "cutscene",
+	"size": 17033684,
+	"data": [
+	{
+	"type": "file",
+	"name": "cutscene.pvr.dat",
+	"date_change": 1659872514,
+	"size": 5731070,
+	"hash": "b1f43b90c63071012cb9b9cc4a616368"
+	},
+	{
+	"type": "file",
+	"name": "cutscene.pvr.tmb",
+	"date_change": 1659872515,
+	"size": 19440,
+	"hash": "ecefcf7d1563ae2fb543ce5c7b72a5aa"
+	},
+	{
+	"type": "file",
+	"name": "cutscene.pvr.toc",
+	"date_change": 1659872515,
+	"size": 1628,
+	"hash": "243c464558242849cf2ed8e6d552e7a1"
+	},
+	{
+	"type": "file",
+	"name": "cutscene.txt",
+	"date_change": 1659741397,
+	"size": 24626,
+	"hash": "1f2342a96a79533cc15b927538635702"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "cutscene.img",
+	"date_change": 1659740526,
+	"size": 16029696,
+	"hash": "47ed437d63709bc3b194a5781fd1b9d6"
+	},
+	{
+	"type": "dir",
+	"name": "gta3",
+	"size": 558916893,
+	"data": [
+	{
+	"type": "file",
+	"name": "gta3.pvr.dat",
+	"date_change": 1659872678,
+	"size": 185311596,
+	"hash": "bcb8dd6fa9f484225aff9d72438ddf40"
+	},
+	{
+	"type": "file",
+	"name": "gta3.pvr.tmb",
+	"date_change": 1659872563,
+	"size": 525340,
+	"hash": "c34313d6250cbd19e5727fda8a517d2d"
+	},
+	{
+	"type": "file",
+	"name": "gta3.pvr.toc",
+	"date_change": 1659872564,
+	"size": 49784,
+	"hash": "246fb4c8f7b7b6efab5727e66900c0b8"
+	},
+	{
+	"type": "file",
+	"name": "gta3.txt",
+	"date_change": 1659741402,
+	"size": 792665,
+	"hash": "43eaa71ee039e2a459d4a6e1f8649374"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "gta3.img",
+	"date_change": 1659740768,
+	"size": 283521024,
+	"hash": "f548816d480d1939cf69c1b677a388db"
+	},
+	{
+	"type": "dir",
+	"name": "gta_int",
+	"size": 146018851,
+	"data": [
+	{
+	"type": "file",
+	"name": "gta_int.pvr.dat",
+	"date_change": 1659872562,
+	"size": 48496978,
+	"hash": "87ed4beca6f0ae920149461bc257a5de"
+	},
+	{
+	"type": "file",
+	"name": "gta_int.pvr.tmb",
+	"date_change": 1659872516,
+	"size": 125994,
+	"hash": "01c7f49e1411d7a9a2d673074200cefb"
+	},
+	{
+	"type": "file",
+	"name": "gta_int.pvr.toc",
+	"date_change": 1659872517,
+	"size": 10168,
+	"hash": "b8a17b9d1417c41b9f3693b75ea97818"
+	},
+	{
+	"type": "file",
+	"name": "gta_int.txt",
+	"date_change": 1659741448,
+	"size": 159541,
+	"hash": "14a247d3a06feb2d5d655dad82e5107b"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "gta_int.img",
+	"date_change": 1659740700,
+	"size": 44836864,
+	"hash": "d81cd4cb77a6a021b6696bf9043bad60"
+	},
+	{
+	"type": "dir",
+	"name": "hud",
+	"size": 93595113,
+	"data": [
+	{
+	"type": "file",
+	"name": "hud.pvr.dat",
+	"date_change": 1659872589,
+	"size": 31179816,
+	"hash": "aee5d26b6dcc6a9abf97a3421b6339c6"
+	},
+	{
+	"type": "file",
+	"name": "hud.pvr.tmb",
+	"date_change": 1659872590,
+	"size": 16944,
+	"hash": "05793f9450545e59872d8036814fbba0"
+	},
+	{
+	"type": "file",
+	"name": "hud.pvr.toc",
+	"date_change": 1659872591,
+	"size": 256,
+	"hash": "ed1355ed15d8dcba52fb22641b91d04a"
+	},
+	{
+	"type": "file",
+	"name": "hud.txt",
+	"date_change": 1659741484,
+	"size": 4065,
+	"hash": "05ee6fca8d5579f91702276df369e05b"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "menu",
+	"size": 10826702,
+	"data": [
+	{
+	"type": "file",
+	"name": "menu.pvr.dat",
+	"date_change": 1659741495,
+	"size": 10822324,
+	"hash": "30aa5729649d437766a245e48a8428c8"
+	},
+	{
+	"type": "file",
+	"name": "menu.pvr.tmb",
+	"date_change": 1659741496,
+	"size": 860,
+	"hash": "84f83c8a061264840fb5b1545d966c2b"
+	},
+	{
+	"type": "file",
+	"name": "menu.pvr.toc",
+	"date_change": 1659741496,
+	"size": 176,
+	"hash": "28a864dbb1cc5424b15ef1212d20eab5"
+	},
+	{
+	"type": "file",
+	"name": "menu.txt",
+	"date_change": 1659741497,
+	"size": 3342,
+	"hash": "2a422b09cff65291c7ee5cb5d370445f"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "mobile",
+	"size": 25246432,
+	"data": [
+	{
+	"type": "file",
+	"name": "mobile.pvr.dat",
+	"date_change": 1659872857,
+	"size": 8887162,
+	"hash": "c02e8a659fff9f69f7534957a9eb9f80"
+	},
+	{
+	"type": "file",
+	"name": "mobile.pvr.tmb",
+	"date_change": 1659872849,
+	"size": 4100,
+	"hash": "ae269365a8c58859ec7ac659cc6c034b"
+	},
+	{
+	"type": "file",
+	"name": "mobile.pvr.toc",
+	"date_change": 1659872850,
+	"size": 800,
+	"hash": "77159aefacb2002e2ca9e1338c318acf"
+	},
+	{
+	"type": "file",
+	"name": "mobile.txt",
+	"date_change": 1659741508,
+	"size": 14614,
+	"hash": "dfd3e25eced57672c631dbfac9d075e6"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "peds",
+	"size": 230271313,
+	"data": [
+	{
+	"type": "file",
+	"name": "peds.pvr.dat",
+	"date_change": 1661723874,
+	"size": 76721208,
+	"hash": "1e438f921741a286d14f61185253d99a"
+	},
+	{
+	"type": "file",
+	"name": "peds.pvr.tmb",
+	"date_change": 1661723874,
+	"size": 24896,
+	"hash": "93620a4908c3930434bc7cc19b8ec0be"
+	},
+	{
+	"type": "file",
+	"name": "peds.pvr.toc",
+	"date_change": 1661723874,
+	"size": 2072,
+	"hash": "6ba00cf63b3efaf5f934b7f918178f00"
+	},
+	{
+	"type": "file",
+	"name": "peds.txt",
+	"date_change": 1661723875,
+	"size": 26785,
+	"hash": "fac4f1166677240c29b736f1e8088797"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "peds.img",
+	"date_change": 1661723826,
+	"size": 80121856,
+	"hash": "3e4661acee4868ca8bca0330290fb2ca"
+	},
+	{
+	"type": "dir",
+	"name": "player",
+	"size": 6605744,
+	"data": [
+	{
+	"type": "file",
+	"name": "player.pvr.dat",
+	"date_change": 1659741572,
+	"size": 6569414,
+	"hash": "a1d04da0effd7228b88b2cc2a44af38c"
+	},
+	{
+	"type": "file",
+	"name": "player.pvr.tmb",
+	"date_change": 1659741573,
+	"size": 6940,
+	"hash": "05c457dd35da898f875659a3db8f52d6"
+	},
+	{
+	"type": "file",
+	"name": "player.pvr.toc",
+	"date_change": 1659741573,
+	"size": 1580,
+	"hash": "ff93c115e12f79407b69fd422a40908f"
+	},
+	{
+	"type": "file",
+	"name": "player.txt",
+	"date_change": 1659741574,
+	"size": 27810,
+	"hash": "53712a52f9a98a3224207a9b67788b83"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "player.img",
+	"date_change": 1659740778,
+	"size": 16412672,
+	"hash": "3eeff76e39c62d2874abbe8656dbd457"
+	},
+	{
+	"type": "dir",
+	"name": "playerhi",
+	"size": 27695509,
+	"data": [
+	{
+	"type": "file",
+	"name": "playerhi.pvr.dat",
+	"date_change": 1659741598,
+	"size": 27658902,
+	"hash": "0dc839aa289317ea221f8fb8f896f46c"
+	},
+	{
+	"type": "file",
+	"name": "playerhi.pvr.tmb",
+	"date_change": 1659741577,
+	"size": 6940,
+	"hash": "4cd33e8a5ca03a6ea5ecc348ebaa52f3"
+	},
+	{
+	"type": "file",
+	"name": "playerhi.pvr.toc",
+	"date_change": 1659741577,
+	"size": 1580,
+	"hash": "36e2114e4d8001e615527313513b4341"
+	},
+	{
+	"type": "file",
+	"name": "playerhi.txt",
+	"date_change": 1659741578,
+	"size": 28087,
+	"hash": "a0ca027e517b7352eba72c420b5357b4"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "pubg",
+	"size": 3940253,
+	"data": [
+	{
+	"type": "file",
+	"name": "pubg.pvr.dat",
+	"date_change": 1659872872,
+	"size": 1311520,
+	"hash": "b7b13944f11918f633b7b2624a9241bb"
+	},
+	{
+	"type": "file",
+	"name": "pubg.pvr.tmb",
+	"date_change": 1659872873,
+	"size": 1360,
+	"hash": "eb94bc37a35bfe1249e52e9ac3e8aa23"
+	},
+	{
+	"type": "file",
+	"name": "pubg.pvr.toc",
+	"date_change": 1659872873,
+	"size": 104,
+	"hash": "80d0160b97ba17366d4299f33320839e"
+	},
+	{
+	"type": "file",
+	"name": "pubg.txt",
+	"date_change": 1659741583,
+	"size": 1301,
+	"hash": "fa951ea71df117af5c05b7f36a4c8ca4"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "pubg.img",
+	"date_change": 1659740790,
+	"size": 20975616,
+	"hash": "0a05b3442b336c069155f2919ffeea9e"
+	},
+	{
+	"type": "dir",
+	"name": "samp",
+	"size": 66123850,
+	"data": [
+	{
+	"type": "file",
+	"name": "samp.pvr.dat",
+	"date_change": 1659872400,
+	"size": 21928512,
+	"hash": "05388e539cc93244857ea9ebf3a7bbd8"
+	},
+	{
+	"type": "file",
+	"name": "samp.pvr.tmb",
+	"date_change": 1659872385,
+	"size": 81344,
+	"hash": "61fcaacd20e483606e850467117f5021"
+	},
+	{
+	"type": "file",
+	"name": "samp.pvr.toc",
+	"date_change": 1659872385,
+	"size": 6132,
+	"hash": "02cea909c7e88ba9e791dcc0992d3166"
+	},
+	{
+	"type": "file",
+	"name": "samp.txt",
+	"date_change": 1659741600,
+	"size": 75886,
+	"hash": "243f11c520c79a71ff933b295d6a8b5d"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "samp.img",
+	"date_change": 1659740810,
+	"size": 34936832,
+	"hash": "72ddb88e09d5c1b89ba5b3a8531a577a"
+	},
+	{
+	"type": "file",
+	"name": "SAMPCOL.img",
+	"date_change": 1659740795,
+	"size": 4253696,
+	"hash": "1830ffedfc451c75aef2dea949d02cb5"
+	},
+	{
+	"type": "dir",
+	"name": "tuning",
+	"size": 74736235,
+	"data": [
+	{
+	"type": "file",
+	"name": "tuning.pvr.dat",
+	"date_change": 1659872406,
+	"size": 24894080,
+	"hash": "b38474f7783061c0af7dd664b81f0b30"
+	},
+	{
+	"type": "file",
+	"name": "tuning.pvr.tmb",
+	"date_change": 1659872401,
+	"size": 13232,
+	"hash": "72374145a05d72a488e5957c53bc4c10"
+	},
+	{
+	"type": "file",
+	"name": "tuning.pvr.toc",
+	"date_change": 1659872402,
+	"size": 872,
+	"hash": "d834e7dd8f8868c563e5d7cd46247280"
+	},
+	{
+	"type": "file",
+	"name": "tuning.txt",
+	"date_change": 1659741605,
+	"size": 11683,
+	"hash": "2a78327f3ef34239790852aecad5a4a1"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "tuning.img",
+	"date_change": 1659740889,
+	"size": 106790912,
+	"hash": "a3fbf76b8bedde16e98e6ddb592bfc22"
+	},
+	{
+	"type": "dir",
+	"name": "txd",
+	"size": 28507705,
+	"data": [
+	{
+	"type": "file",
+	"name": "txd.pvr.dat",
+	"date_change": 1659872409,
+	"size": 8813654,
+	"hash": "794050293b505c9f24ceb3e4ce1f9f07"
+	},
+	{
+	"type": "file",
+	"name": "txd.pvr.tmb",
+	"date_change": 1659872407,
+	"size": 25324,
+	"hash": "ab662bfd4fcc4f272aa020393e138d66"
+	},
+	{
+	"type": "file",
+	"name": "txd.pvr.toc",
+	"date_change": 1659872408,
+	"size": 2376,
+	"hash": "5f92446c541802d0f716b54df01e961e"
+	},
+	{
+	"type": "file",
+	"name": "txd.txt",
+	"date_change": 1659741617,
+	"size": 43167,
+	"hash": "be98df07d0ea2b887791031036db0ae2"
+	}
+	]
+	},
+	{
+	"type": "dir",
+	"name": "vehs_1",
+	"size": 210485299,
+	"data": [
+	{
+	"type": "file",
+	"name": "vehs_1.pvr.dat",
+	"date_change": 1679838364,
+	"size": 56920876,
+	"hash": "12d089e739d73911414b3a65f62b42a6"
+	},
+	{
+	"type": "file",
+	"name": "vehs_1.pvr.tmb",
+	"date_change": 1679838364,
+	"size": 249264,
+	"hash": "c9cb4f07613f482a0688781e684b0eee"
+	},
+	{
+	"type": "file",
+	"name": "vehs_1.pvr.toc",
+	"date_change": 1679838364,
+	"size": 8096,
+	"hash": "28a6a480b128b24c27ace5434239635d"
+	},
+	{
+	"type": "file",
+	"name": "vehs_1.txt",
+	"date_change": 1679838364,
+	"size": 121767,
+	"hash": "92eef7b04471ac7323f90e40463729f2"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "vehs_1.img",
+	"date_change": 1679840475,
+	"size": 482422784,
+	"hash": "848b0613c35d673f1c9b8c8e9aee0c32"
+	},
+	{
+	"type": "dir",
+	"name": "vehs_2",
+	"size": 321868478,
+	"data": [
+	{
+	"type": "file",
+	"name": "vehs_2.pvr.dat",
+	"date_change": 1679839377,
+	"size": 85569930,
+	"hash": "95898d034abd0572a54561a6d7fc3972"
+	},
+	{
+	"type": "file",
+	"name": "vehs_2.pvr.tmb",
+	"date_change": 1679839376,
+	"size": 355728,
+	"hash": "a3dc8b1bd94b2084416ec450b2f57332"
+	},
+	{
+	"type": "file",
+	"name": "vehs_2.pvr.toc",
+	"date_change": 1679839377,
+	"size": 10292,
+	"hash": "28fe260e3f0aec2f89265c847b7ef321"
+	},
+	{
+	"type": "file",
+	"name": "vehs_2.txt",
+	"date_change": 1679839377,
+	"size": 162170,
+	"hash": "d96ac0ed4e84dd349328df1a7cb525a0"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "vehs_2.img",
+	"date_change": 1679840490,
+	"size": 589203456,
+	"hash": "238eaaf71d4ae1fca59bae317a9c1c9a"
+	},
+	{
+	"type": "dir",
+	"name": "vehs_3",
+	"size": 354400413,
+	"data": [
+	{
+	"type": "file",
+	"name": "vehs_3.pvr.dat",
+	"date_change": 1679840269,
+	"size": 96033238,
+	"hash": "ef55d93467ce85cd730a0a86c8a73731"
+	},
+	{
+	"type": "file",
+	"name": "vehs_3.pvr.tmb",
+	"date_change": 1679840269,
+	"size": 239552,
+	"hash": "1620bc376d058f9021aada93b819ffc0"
+	},
+	{
+	"type": "file",
+	"name": "vehs_3.pvr.toc",
+	"date_change": 1679840269,
+	"size": 8864,
+	"hash": "9bf8bde39acfda6b0698852e7f07679c"
+	},
+	{
+	"type": "file",
+	"name": "vehs_3.txt",
+	"date_change": 1679840269,
+	"size": 128075,
+	"hash": "4df21a013a598d8488fdda1feccde23b"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "vehs_3.img",
+	"date_change": 1679840504,
+	"size": 569673728,
+	"hash": "45da638f34652b619176c385273baf74"
+	},
+	{
+	"type": "dir",
+	"name": "vehs_4",
+	"size": 98889351,
+	"data": [
+	{
+	"type": "file",
+	"name": "vehs_4.pvr.dat",
+	"date_change": 1679840406,
+	"size": 31963416,
+	"hash": "fe99ee00b1166825029de315f821541e"
+	},
+	{
+	"type": "file",
+	"name": "vehs_4.pvr.tmb",
+	"date_change": 1679840406,
+	"size": 53248,
+	"hash": "19c92f36d3415d15b359106b1538497f"
+	},
+	{
+	"type": "file",
+	"name": "vehs_4.pvr.toc",
+	"date_change": 1679840406,
+	"size": 3824,
+	"hash": "3ac3e4f9ade5c1cf9ff2d76a89d06181"
+	},
+	{
+	"type": "file",
+	"name": "vehs_4.txt",
+	"date_change": 1679840406,
+	"size": 52565,
+	"hash": "e1c4d44f03f94295361beaca6c4d0486"
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "vehs_4.img",
+	"date_change": 1679840522,
+	"size": 167172096,
+	"hash": "b4a868bef725b587ca8680d7c6f44524"
+	},
+	{
+	"type": "dir",
+	"name": "vinils",
+	"size": 37762473,
+	"data": [
+	{
+	"type": "file",
+	"name": "vinils.pvr.dat",
+	"date_change": 1659872505,
+	"size": 12586200,
+	"hash": "03082f93c1331ab1815dcda2abb75759"
+	},
+	{
+	"type": "file",
+	"name": "vinils.pvr.tmb",
+	"date_change": 1659872505,
+	"size": 912,
+	"hash": "659d9bf46f3bada3d8a8ccd02d4ec02d"
+	},
+	{
+	"type": "file",
+	"name": "vinils.pvr.toc",
+	"date_change": 1659872505,
+	"size": 80,
+	"hash": "21c072894daba216b4e6217b2f10037e"
+	},
+	{
+	"type": "file",
+	"name": "vinils.txt",
+	"date_change": 1659741716,
+	"size": 897,
+	"hash": "ba9e8ba2343fce7997888a821c3c60f0"
+	}
+	]
+	}
+	]
+	},
+	{
+	"type": "file",
+	"name": "vehicleAudioSettings.cfg",
+	"date_change": 1659740440,
+	"size": 47800,
+	"hash": "6b47abedc1ab6ffce6bd230acdf7298b"
+	}
+	]
+	}
+ ],
+ "obb": []
+ }
+}
