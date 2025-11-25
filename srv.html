@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="servers"></div>
+
+    <script>
+        fetch('https://sagms.site/mobile_client_ping/449')
+            .then(r => r.json())
+            .then(data => {
+                data.query.forEach(server => {
+                    document.getElementById('servers').innerHTML += `
+                        <div>
+                            <h3>${server.name}</h3>
+                            <p>Players: ${server.online}/${server.maxplayers}</p>
+                        </div>
+                    `;
+                });
+            });
+    </script>
+</body>
+</html>
