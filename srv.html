@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>API Endpoint</title>
-</head>
-<body>
-    <pre id="json-output"></pre>
-    
     <script>
-        // Fetch from the SA-MP API
+        // Literally just pass through whatever that endpoint returns
         fetch('https://sagms.site/mobile_client_ping/449')
-            .then(response => response.json())
-            .then(data => {
-                // Display as formatted JSON
-                document.getElementById('json-output').textContent = 
-                    JSON.stringify(data.query, null, 2);
+            .then(response => response.text())
+            .then(text => {
+                document.body.textContent = text;
             })
             .catch(error => {
-                document.getElementById('json-output').textContent = 
-                    JSON.stringify({error: 'Failed to fetch data'}, null, 2);
+                document.body.textContent = JSON.stringify({error: error.message});
             });
     </script>
-</body>
+</head>
+<body>Loading...</body>
 </html>
