@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>API Endpoint</title>
+</head>
 <body>
-    <div id="servers"></div>
-
+    <pre id="json-output"></pre>
+    
     <script>
+        // Fetch from the SA-MP API
         fetch('https://sagms.site/mobile_client_ping/449')
-            .then(r => r.json())
+            .then(response => response.json())
             .then(data => {
-                data.query.forEach(server => {
-                    document.getElementById('servers').innerHTML += `
-                        <div>
-                            <h3>${server.name}</h3>
-                            <p>Players: ${server.online}/${server.maxplayers}</p>
-                        </div>
-                    `;
-                });
+                // Display as formatted JSON
+                document.getElementById('json-output').textContent = 
+                    JSON.stringify(data.query, null, 2);
+            })
+            .catch(error => {
+                document.getElementById('json-output').textContent = 
+                    JSON.stringify({error: 'Failed to fetch data'}, null, 2);
             });
     </script>
 </body>
