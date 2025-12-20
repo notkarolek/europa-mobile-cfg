@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europa RolePlay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            color: #333;
+        }
+        
+        /* Background container with blur effect */
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        }
+        
+        .background-blur {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px);
+            opacity: 0.85;
+        }
+        
+        /* Main content area - takes up all available space */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Vertically center content */
+            text-align: center;
+            padding: 20px;
+            height: calc(100vh - 60px); /* Account for bottom bar */
+        }
+        
+        .main-text {
+            color: white;
+            font-size: clamp(1.8rem, 4vw, 2.8rem); /* Responsive font size */
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            line-height: 1.2;
+        }
+        
+        /* Button container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 900px;
+        }
+        
+        .action-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 30px 25px;
+            width: min(280px, 90vw); /* Responsive width */
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .action-button:hover {
+            transform: translateY(-8px);
+            background-color: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .button-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+        
+        .button-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .button-description {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        
+        /* Bottom bar - simplified */
+        .bottom-bar {
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+        
+        .bar-text {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .main-content {
+                padding-top: 0;
+                justify-content: flex-start;
+                padding-top: 15vh;
+            }
+            
+            .main-text {
+                margin-bottom: 30px;
+                padding: 0 10px;
+            }
+            
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 25px;
+            }
+            
+            .action-button {
+                padding: 25px 20px;
+                width: 90%;
+                max-width: 320px;
+            }
+            
+            .bottom-bar {
+                padding: 15px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main-text {
+                font-size: 1.6rem;
+            }
+            
+            .button-icon {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .button-title {
+                font-size: 1.3rem;
+            }
+        }
+        
+        /* Ensure no scrolling on very small screens */
+        @media (max-height: 700px) {
+            .main-content {
+                padding-top: 10vh;
+            }
+            
+            .main-text {
+                margin-bottom: 20px;
+                font-size: 1.5rem;
+            }
+            
+            .button-icon {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+            
+            .action-button {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background with blur effect -->
+    <div class="background-container">
+        <div class="background-blur"></div>
+    </div>
+    
+    <!-- Main content area -->
+    <main class="main-content">
+        <h1 class="main-text">Discover Amazing Features with Our Interactive Platform</h1>
+<div class="button-container">
+    <!-- First button - Europa RP Website -->
+    <a href="https://europa-rp.com" class="action-button" target="_blank">
+        <img src="https://europa-rp.com/images/logo.png" alt="Server" class="button-icon">
+        <h3 class="button-title">Europa Roleplay</h3>
+        <p class="button-description">Visit our official website to learn more about the server, features, and community.</p>
+    </a>
+    
+    <!-- Second button - Discord -->
+    <a href="https://discord.gg/europa-roleplay" class="action-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="button-icon">
+        <h3 class="button-title">Join Discord</h3>
+        <p class="button-description">Connect with our community on Discord for announcements, support, and events.</p>
+    </a>
+</div>
+    </main>
+
+    <script>
+        // Simple interaction for button clicks
+        document.querySelectorAll('.action-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Add a click effect
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 200);
+            });
+        });
+        
+        // Prevent any scrolling
+        document.addEventListener('wheel', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+        
+        document.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+        
+        // Dynamic background blur intensity control (for demo purposes)
+        const backgroundBlur = document.querySelector('.background-blur');
+        let blurIntensity = 20;
+        
+        // Keyboard navigation for buttons
+        document.addEventListener('keydown', function(e) {
+            const buttons = document.querySelectorAll('.action-button');
+            if (e.key === 'ArrowLeft' && buttons[1] === document.activeElement) {
+                buttons[0].focus();
+            } else if (e.key === 'ArrowRight' && buttons[0] === document.activeElement) {
+                buttons[1].focus();
+            }
+        });
+    </script>
+</body>
+</html>
