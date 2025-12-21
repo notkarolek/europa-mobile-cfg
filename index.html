@@ -384,6 +384,66 @@
             .game-image {
                 height: 170px;
             }
+                    .download-btn {
+            display: flex;
+            align-items: center;
+            background-color: rgba(77, 124, 254, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(77, 124, 254, 0.4);
+            border-radius: 12px;
+            padding: 20px 30px;
+            width: 100%;
+            max-width: 500px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .download-btn:hover {
+            background-color: rgba(77, 124, 254, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .download-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .download-btn:disabled:hover {
+            transform: none;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: #4d7cfe;
+        }
+        
+        .btn-content {
+            text-align: left;
+            flex: 1;
+        }
+        
+        .btn-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .btn-description {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .btn-action {
+            font-size: 1.5rem;
+            opacity: 0.8;
+        }
         }
     </style>
 </head>
@@ -414,13 +474,25 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Main content area - starts right under header -->
     <main class="main-content">
         <div class="content-container">
             <!-- Text section -->
+            
             <div class="text-section">
                 <h2 class="section-title">Welcome to Europa RP</h2>
+<!-- Blue Compact APK Download Button -->
+<div style="margin-top: 20px; width: 100%; max-width: 500px;">
+    <a href="https://your-apk-link-here.apk" download class="compact-btn" style="text-decoration: none; display: block;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 12px 20px; background-color: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 10px; transition: all 0.3s ease;">
+            <i class="fab fa-android" style="font-size: 1.5rem; color: rgba(255, 255, 255, 0.7);"></i>
+            <span style="font-size: 1.1rem; font-weight: 600; color: white;">Download APK</span>
+            <i class="fas fa-download" style="margin-left: auto; font-size: 1.1rem; color: rgba(255, 255, 255, 0.7);"></i>
+        </div>
+    </a>
+</div>
+<br>
                 <p class="section-text">
                     Experience the most immersive roleplaying server in San Andreas Multiplayer. 
                     Join thousands of players in a dynamic, evolving world where your choices 
