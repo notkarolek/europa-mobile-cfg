@@ -40,7 +40,7 @@
         .background-blur {
             width: 100%;
             height: 100%;
-            background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+            background-image: url('https://raw.githubusercontent.com/notkarolek/europa-mobile-cfg/refs/heads/main/background.jpg');
             background-size: cover;
             background-position: center;
             filter: blur(15px);
@@ -423,14 +423,30 @@
             
             <!-- Download Buttons -->
             <div class="download-buttons">
+            <!-- Hardcoded Download Button -->
+<div style="margin-top: 20px; width: 100%; max-width: 500px;">
+    <a href="https://drive.google.com/your-hardcoded-link-here" target="_blank" class="download-btn" style="background-color: rgba(46, 204, 113, 0.2); border-color: rgba(46, 204, 113, 0.4); text-decoration: none; display: block;">
+        <div class="btn-icon">
+            <i class="fas fa-download"></i>
+        </div>
+        <div class="btn-content">
+            <div class="btn-title">Download Base Resources</div>
+            <div class="btn-description">Universal game resources (without textures)</div>
+        </div>
+        <div class="btn-action">
+            <i class="fas fa-external-link-alt"></i>
+        </div>
+    </a>
+</div>
                 <!-- Auto-detected download button -->
                 <button id="downloadBtn" class="download-btn" disabled>
                     <div class="btn-icon">
                         <i class="fas fa-database"></i>
                     </div>
+                    
                     <div class="btn-content">
                         <div class="btn-title">Download Game Data Files</div>
-                        <div class="btn-description">Textures and resources for your GPU</div>
+                        <div class="btn-description">Textures for your GPU</div>
                     </div>
                     <div class="btn-action">
                         <i class="fas fa-arrow-right"></i>
@@ -526,7 +542,7 @@
                 // Update button title with GPU name
                 const btnTitle = downloadBtn.querySelector('.btn-title');
                 if (gpuName) {
-                    btnTitle.textContent = `Download ${gpuName} Resources`;
+                    btnTitle.textContent = `Download ${gpuName} Textures`;
                 }
                 
                 downloadBtn.onclick = () => {
@@ -541,7 +557,7 @@
                         // Reset button after 2 seconds
                         setTimeout(() => {
                             downloadBtn.disabled = false;
-                            btnTitle.textContent = gpuName ? `Download ${gpuName} Resources` : 'Download Resources';
+                            btnTitle.textContent = gpuName ? `Download ${gpuName} Textures` : 'Download Resources';
                             downloadBtn.querySelector('.btn-description').textContent = 'Recommended version for your device';
                         }, 2000);
                     }, 500);
