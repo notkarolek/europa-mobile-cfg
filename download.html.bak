@@ -489,9 +489,9 @@
 
     <!-- Hidden direct-download links -->
     <div class="hidden-links">
-        <a id="linkMaliData" href="https://www.mediafire.com/file/lhj1ivubv0fr92i/texture_etc.zip/file"></a>
-        <a id="linkPVRData" href="https://www.mediafire.com/file/eqq6993hyk2lvwq/texture_pvr.zip/file"></a>
-        <a id="linkAdrenoData" href="https://www.mediafire.com/file/8b4fl3we2to2b0s/texture_dxt.zip/file"></a>
+        <a id="linkMaliData" href="https://drive.usercontent.google.com/download?id=1GiO70loONDe8MTJeg93BtaoB5fMPE5ms"></a>
+        <a id="linkPVRData" href="https://drive.usercontent.google.com/download?id=1nkuLWf4oPHltKJ7PVGzxHP78S-5qZ8M_"></a>
+        <a id="linkAdrenoData" href="https://drive.usercontent.google.com/download?id=1UsVJOwwRwdGt3TK7Wi0GHX9RSIDeqYA7"></a>
     </div>
 
     <script>
