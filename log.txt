@@ -1,0 +1,15 @@
+Earlier ->
+> Landscape launcher UI
+> Winter UI and Icon
+> CleoMOD Brought back {important}
+> Test IP input
+> New In game buttons and Custom UI
+> Fixed Car Handling {important}
+22.12.2025 ->
+> Fixed compatibility issues with some devices (faulty permissions and values) {important}
+> Brought back in built file downloader
+> Small Visual Fix
+23.12.2025 ->
+> Change Package name
+> Fixed fullscren (android 9+) {important} 
+> Newer Audio Libraries
