@@ -5,6 +5,8 @@ Earlier ->
 > Test IP input
 > New In game buttons and Custom UI
 > Fixed Car Handling {important}
+> Added some mappings
+> Fixed corrupted skins
 22.12.2025 ->
 > Fixed compatibility issues with some devices (faulty permissions and values) {important}
 > Brought back in built file downloader
@@ -13,3 +15,5 @@ Earlier ->
 > Change Package name
 > Fixed fullscren (android 9+) {important} 
 > Newer Audio Libraries
+25.12.2025 ->
+> Big log remover
