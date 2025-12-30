@@ -17,3 +17,10 @@ Earlier ->
 > Newer Audio Libraries
 25.12.2025 ->
 > Big log remover
+26-28.12.2025 ->
+> forgot to update this and forgot what I did
+29.12.2025 ->
+> dynamic news loader
+> new informationpage ui
+30.12.2025 ->
+> working on settings
