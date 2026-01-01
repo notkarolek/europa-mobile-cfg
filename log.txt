@@ -24,3 +24,11 @@ Earlier ->
 > new informationpage ui
 30.12.2025 ->
 > working on settings
+> ip input now is the launcher logo in settings
+31.12.2025
+> monetloader 3.8.0
+> game settings ui changes
+1.01.2026 ->
+> assetpack extractor
+> monetloader Web browser built in
+> aml pack built in
