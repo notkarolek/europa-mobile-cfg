@@ -487,6 +487,103 @@
                 margin: 0 10px;
                 font-size: 0.85rem;
             }
+            /* GPU Detection Results */
+.gpu-results {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.gpu-info {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.gpu-info i {
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* Download buttons */
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    background-color: rgba(77, 124, 254, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(77, 124, 254, 0.4);
+    border-radius: 12px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 500px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+.download-btn:hover {
+    background-color: rgba(77, 124, 254, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.download-btn:disabled:hover {
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-icon {
+    font-size: 2rem;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-content {
+    text-align: left;
+    flex: 1;
+}
+
+.btn-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.btn-description {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.btn-action {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+/* Hidden download links */
+.hidden-links {
+    display: none;
+}
         }
     </style>
 </head>
@@ -499,7 +596,6 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <div class="logo-icon"></div>
             <h1 class="logo-text">Winter</h1>
         </div>
         
@@ -519,10 +615,81 @@
             
             <h2 class="section-title">Winter Mod</h2>
             
-            <p class="section-subtitle">
-                A full winter map mod is coming soon! Just making sure it's flawless
-            </p>
-            
+            <!-- Download Button -->
+            <div style="margin-top: 30px; width: 100%; max-width: 500px;">
+                <button id="downloadBtn" class="download-btn" disabled style="margin: 0 auto; display: block;">
+                    <div class="btn-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="btn-content">
+                        <div class="btn-title">Detecting Your GPU...</div>
+                        <div class="btn-description">Please wait</div>
+                    </div>
 
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Hidden direct-download links -->
+    <div class="hidden-links">
+        <a id="linkMaliData" href="https://www.mediafire.com/file/332rwuxo6tval0z/europa.mod.zip/file"></a>
+        <a id="linkPVRData" href="https://www.mediafire.com/file/x024pwg9p8ebop3/europa.mod.zip/file"></a>
+        <a id="linkAdrenoData" href="https://www.mediafire.com/file/z093w48crn5iqmi/europa.mod.zip/file"></a>
+    </div>
+
+    <script>
+        // GPU Detection Function
+        function getWebGLRenderer() {
+            const canvas = document.createElement('canvas');
+            const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+            if (!gl) return null;
+
+            const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+            return debugInfo ? gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) : null;
+        }
+
+        function detectGPU() {
+            const renderer = getWebGLRenderer() || 'Unknown';
+            let dataLink = '';
+            let gpuName = '';
+
+            const rendererLower = renderer.toLowerCase();
+
+            if (rendererLower.includes('mali')) {
+                dataLink = document.getElementById('linkMaliData').href;
+                gpuName = 'Mali';
+            } else if (rendererLower.includes('power vr') || rendererLower.includes('powervr')) {
+                dataLink = document.getElementById('linkPVRData').href;
+                gpuName = 'PowerVR';
+            } else if (rendererLower.includes('adreno')) {
+                dataLink = document.getElementById('linkAdrenoData').href;
+                gpuName = 'Adreno';
+            }
+
+            const downloadBtn = document.getElementById('downloadBtn');
+            const btnTitle = downloadBtn.querySelector('.btn-title');
+            const btnDesc = downloadBtn.querySelector('.btn-description');
+
+            if (dataLink) {
+                downloadBtn.disabled = false;
+                downloadBtn.style.backgroundColor = 'rgba(77, 124, 254, 0.2)';
+                downloadBtn.style.borderColor = 'rgba(77, 124, 254, 0.4)';
+                
+                btnTitle.textContent = 'Download Winter Mod';
+                btnDesc.textContent = gpuName ? `` : '';
+                
+                downloadBtn.onclick = () => {
+                    window.location.href = dataLink;
+                };
+            } else {
+                btnTitle.textContent = 'GPU Not Detected';
+                btnDesc.textContent = 'Cannot detect your GPU type';
+            }
+        }
+
+        // Initialize detection
+        detectGPU();
+    </script>
 </body>
 </html>
