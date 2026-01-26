@@ -1,4 +1,5 @@
 experiments/app-debug.apk
+experiments/binder_game_render.xml
 *.bak
 *.xml
 *.smali
