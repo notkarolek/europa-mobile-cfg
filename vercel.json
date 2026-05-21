@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/server-data.js": {
+      "maxDuration": 10
+    }
+  }
+}
