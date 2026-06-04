@@ -1,11 +1,17 @@
 import os
-commitMessage = str(input("Commit Message;\n-> "))
-os.system("git add -A")
-os.system("git commit -m '" + commitMessage + "'")
+import subprocess
+
+repo_path = "/storage/emulated/0/Documents/EuropaLauncher/github/europa-mobile-cfg/"
+
+commitMessage = str(input("Commit Message:\n-> "))
+
+subprocess.run(["git", "add", "-A"], cwd=repo_path)
+subprocess.run(["git", "commit", "-m", commitMessage], cwd=repo_path)
+
 type = int(input("force? | 0 no / 1 yes;\n-> "))
 if type == 0:
- os.system("git push origin main")
+    subprocess.run(["git", "push", "origin", "main"], cwd=repo_path)
 elif type == 1:
- os.system("git push origin main --force")
+    subprocess.run(["git", "push", "origin", "main", "--force"], cwd=repo_path)
 else:
- print("inv")
+    print("inv")
