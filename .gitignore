@@ -2,3 +2,4 @@
 *.xml
 *.smali
 *.dex
+*.py
