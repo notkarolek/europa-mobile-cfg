@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galaxy S24 Ultra</title>
+  <style>
+    /* Import custom fonts from web/sandbox/ directory */
+    @font-face {
+      font-family: 'CustomHeading';
+      src: url('web/sandbox/heading.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'UbuntuFont';
+      src: url('web/sandbox/ubuntu.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .phone-frame {
+      width: 2340px;
+      height: 1080px;
+      position: relative;
+      flex-shrink: 0;
+      transform: scale(0.75);
+      transform-origin: center;
+    }
+
+    /* Silver shell - thin, boxy */
+    .silver-shell {
+      position: absolute;
+      inset: -6px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #d8d8d8, #b8b8b8, #c8c8c8, #9a9a9a);
+      box-shadow: 
+        0 30px 80px rgba(0, 0, 0, 0.8),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      z-index: 0;
+    }
+
+    /* Black outline - thin, boxy */
+    .black-outline {
+      position: absolute;
+      inset: -3px;
+      border-radius: 15px;
+      background: #0a0a0a;
+      box-shadow: 
+        inset 0 2px 4px rgba(0, 0, 0, 0.6),
+        0 0 15px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Screen container - boxy with minimal rounding */
+    .screen-container {
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #000000;
+      z-index: 2;
+    }
+
+    /* ANDROID LAYOUT STARTS HERE */
+    .android-layout {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-color: #000000;
+    }
+
+    /* ========== CFG LAYOUT ========== */
+    .cfg-layout {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .cfg-layout.active {
+      display: block;
+    }
+
+    .cfg-background {
+      position: absolute;
+      inset: 0;
+      background-image: url('web/sandbox/activity_cfg.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+    }
+
+    .cfg-overlay {
+      position: absolute;
+      inset: 0;
+      background: #000000;
+      opacity: 0.75;
+    }
+
+    .cfg-top-bar {
+      position: absolute;
+      top: 25px;
+      left: 75px;
+      display: flex;
+      align-items: center;
+      gap: 37px;
+      z-index: 3;
+    }
+
+    .cfg-return-btn {
+      color: #ffffff;
+      font-size: 75px;
+      font-family: 'CustomHeading', system-ui, sans-serif;
+      opacity: 0.8;
+      cursor: pointer;
+      text-decoration: none;
+      background: none;
+      border: none;
+      padding: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transition: opacity 0.2s;
+    }
+
+    .cfg-return-btn:hover {
+      opacity: 1;
+    }
+
+    .cfg-save-btn {
+      color: #ffffff;
+      font-size: 75px;
+      font-family: 'CustomHeading', system-ui, sans-serif;
+      opacity: 0.8;
+      cursor: pointer;
+      text-decoration: none;
+      background: none;
+      border: none;
+      padding: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transition: opacity 0.2s;
+    }
+
+    .cfg-save-btn:hover {
+      opacity: 1;
+    }
+
+    .cfg-editor {
+      position: absolute;
+      top: 175px;
+      left: 75px;
+      right: 75px;
+      bottom: 75px;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #c0e0c0;
+      font-size: 25px;
+      font-family: 'UbuntuFont', 'Courier New', 'Consolas', monospace;
+      padding: 30px;
+      resize: none;
+      overflow: auto;
+      text-shadow: 2px 2px 3px #000000;
+      line-height: 1.6;
+      z-index: 3;
+      letter-spacing: 0.5px;
+    }
+
+    .cfg-editor::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 25px;
+      font-family: 'UbuntuFont', 'Courier New', 'Consolas', monospace;
+    }
+
+    .cfg-editor:focus {
+      outline: none;
+    }
+
+    .cfg-editor::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .cfg-editor::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+
+    .cfg-editor::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 5px;
+    }
+
+    .cfg-editor::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ========== LOADING LAYOUT ========== */
+    .loading-layout {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .loading-layout.active {
+      display: block;
+    }
+
+    .loading-background {
+      position: absolute;
+      inset: 0;
+      background-image: url('web/sandbox/activity_loading.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+    }
+
+    .loading-shade {
+      position: absolute;
+      top: 150px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
+      opacity: 0.7;
+    }
+
+    .loading-bottom {
+      position: absolute;
+      bottom: 80px;
+      right: 80px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      z-index: 3;
+    }
+
+    .loading-text {
+      color: #fff8f4ff;
+      font-size: 60px;
+      font-family: 'CustomHeading', system-ui, sans-serif;
+      text-shadow: 3px 3px 6px #000000;
+      opacity: 0.6;
+      letter-spacing: 0.15em;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .netstat-icon {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+      position: relative;
+      animation: spin 2s linear infinite;
+    }
+    
+    .netstat-icon::before {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border-radius: 50%;
+      border: 12px solid rgba(255, 255, 255, 0.1);
+      border-top: 12px solid rgba(255, 255, 255, 0.5);
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* ========== INFO LAYOUT (3x SCALED) ========== */
+    .info-layout {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-color: #000000;
+    }
+
+    .info-layout.active {
+      display: block;
+    }
+
+    .info-background {
+      position: absolute;
+      inset: 0;
+      background-image: url('web/background.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 1;
+    }
+
+    /* Character image - smaller, anchored left, 0px above servers button */
+    .char-image {
+      position: absolute;
+      bottom: 180px;
+      left: 30px;
+      width: 400px;
+      height: 400px;
+      background-image: url('web/char.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      z-index: 3;
+    }
+
+    .top-buttons {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      gap: 0;
+      z-index: 3;
+      margin-top: -15px;
+    }
+
+    .top-btn {
+      width: 180px;
+      height: 180px;
+      border: none;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+    }
+
+    .top-btn:hover {
+      opacity: 0.8;
+    }
+
+    .btn-mods {
+      background-image: url('https://placehold.co/180x180/ff6b35/fff/png?text=Mods');
+      border-radius: 10px;
+    }
+
+    .btn-update {
+      background-image: url('https://placehold.co/180x180/4ecdc4/fff/png?text=Update');
+      border-radius: 10px;
+    }
+
+    .btn-discord {
+      background-image: url('https://placehold.co/180x180/5865f2/fff/png?text=Discord');
+      border-radius: 10px;
+    }
+
+    .btn-settings {
+      background-image: url('https://placehold.co/180x180/95a5a6/fff/png?text=Settings');
+      margin-right: 15px;
+      border-radius: 10px;
+    }
+
+    .server-btn {
+      position: absolute;
+      bottom: 180px;
+      right: 30px;
+      width: 495px;
+      height: 150px;
+      background-image: url('https://placehold.co/495x150/666/aaa/png?text=Servers');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      z-index: 3;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .server-btn:hover {
+      opacity: 0.8;
+    }
+
+    .car-btn {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      width: 495px;
+      height: 135px;
+      background-image: url('https://placehold.co/495x135/444/888/png?text=Connect');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      z-index: 3;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .car-btn:hover {
+      opacity: 0.8;
+    }
+
+    /* Status text - centered over servers button with gap */
+    .status-text {
+      position: absolute;
+      bottom: 380px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #ff6b6b;
+      font-size: 60px;
+      font-family: 'CustomHeading', system-ui, sans-serif;
+      text-align: center;
+      text-shadow: 3px 3px 4.5px #000000;
+      width: 540px;
+      height: 210px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      line-height: 1.2;
+    }
+
+    .news-section {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      z-index: 3;
+    }
+
+    .news-item {
+      position: relative;
+      width: 495px;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 2px solid #444;
+      cursor: pointer;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .news-item:first-child {
+      margin-top: 30px;
+      background-image: url('web/news1.webp');
+    }
+
+    .news-item:last-child {
+      background-image: url('web/news2.webp');
+    }
+
+    .news-item:hover {
+      opacity: 0.8;
+    }
+
+    .news-link {
+      position: absolute;
+      bottom: 3px;
+      right: 3px;
+      width: 148.5px;
+      height: 36px;
+      background-image: url('https://placehold.co/148.5x36/ff9900/fff/png?text=link');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      border-radius: 10px;
+    }
+
+    .donate-btn {
+      display: none;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      width: 742.5px;
+      height: 225px;
+      background-image: url('https://placehold.co/742.5x225/ffcc00/333/png?text=Donate');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 3;
+      border-radius: 10px;
+    }
+
+    .netstat-info {
+      display: none;
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 750px;
+      height: 75px;
+      background-image: url('https://placehold.co/750x75/666/aaa/png?text=No+Net');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 3;
+      border-radius: 10px;
+    }
+
+    /* Punch hole camera - scaled down (1x original size) */
+    .punch-hole {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 35%, #1a1a2e, #0a0a0a);
+      box-shadow: 
+        inset 0 3px 6px rgba(0, 0, 0, 0.8),
+        0 0 12px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+    }
+
+    .punch-hole::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      width: 12px;
+      height: 8px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+      transform: rotate(-30deg);
+    }
+
+    /* Responsive scaling to fit viewport */
+    @media (max-width: 2340px) {
+      .phone-frame { transform: scale(0.9); }
+    }
+    @media (max-width: 2100px) {
+      .phone-frame { transform: scale(0.8); }
+    }
+    @media (max-width: 1900px) {
+      .phone-frame { transform: scale(0.7); }
+    }
+    @media (max-width: 1650px) {
+      .phone-frame { transform: scale(0.6); }
+    }
+    @media (max-width: 1400px) {
+      .phone-frame { transform: scale(0.5); }
+    }
+    @media (max-width: 1200px) {
+      .phone-frame { transform: scale(0.4); }
+    }
+    @media (max-width: 950px) {
+      .phone-frame { transform: scale(0.3); }
+    }
+    @media (max-width: 700px) {
+      .phone-frame { transform: scale(0.2); }
+    }
+    @media (max-width: 500px) {
+      .phone-frame { transform: scale(0.15); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="phone-frame">
+      <div class="silver-shell"></div>
+      <div class="black-outline"></div>
+      <div class="screen-container">
+        <div class="android-layout">
+          
+          <!-- ===== CFG LAYOUT ===== -->
+          <div class="cfg-layout" id="cfgLayout">
+            <div class="cfg-background"></div>
+            <div class="cfg-overlay"></div>
+            <div class="cfg-top-bar">
+              <a href="?info" class="cfg-return-btn">Return</a>
+              <button class="cfg-save-btn" onclick="saveCFG()">Save</button>
+            </div>
+            <textarea class="cfg-editor" id="samp.cfg" placeholder="samp.cfg" spellcheck="false"></textarea>
+            <div class="punch-hole"></div>
+          </div>
+          
+          <!-- ===== LOADING LAYOUT ===== -->
+          <div class="loading-layout" id="loadingLayout">
+            <div class="loading-background"></div>
+            <div class="loading-shade"></div>
+            <div class="loading-bottom">
+              <span class="loading-text" id="update_state">Loading...</span>
+              <div class="netstat-icon" id="netstat"></div>
+            </div>
+            <div class="punch-hole"></div>
+          </div>
+          
+          <!-- ===== INFO LAYOUT (3x SCALED) ===== -->
+          <div class="info-layout" id="infoLayout">
+            <div class="info-background"></div>
+            
+            <div class="char-image"></div>
+            
+            <div class="top-buttons">
+              <button class="top-btn btn-mods" onclick="alert('Mods clicked')"></button>
+              <button class="top-btn btn-update" onclick="alert('Update clicked')"></button>
+              <button class="top-btn btn-discord" onclick="alert('Discord clicked')"></button>
+              <button class="top-btn btn-settings" onclick="alert('Settings clicked')"></button>
+            </div>
+            
+            <button class="server-btn" onclick="alert('Servers clicked')"></button>
+            <button class="car-btn" onclick="alert('Connect clicked')"></button>
+            
+            <div class="status-text">File Issue Detected!</div>
+            
+            <div class="news-section">
+              <div class="news-item" onclick="alert('News 1 clicked')">
+                <div class="news-link"></div>
+              </div>
+              <div class="news-item" onclick="alert('News 2 clicked')">
+                <div class="news-link"></div>
+              </div>
+            </div>
+            
+            <div class="donate-btn"></div>
+            <div class="netstat-info"></div>
+            
+            <div class="punch-hole"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ===== URL ROUTING =====
+    function getParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    function showLayout(layoutName) {
+      const cfgLayout = document.getElementById('cfgLayout');
+      const loadingLayout = document.getElementById('loadingLayout');
+      const infoLayout = document.getElementById('infoLayout');
+      
+      cfgLayout.classList.remove('active');
+      loadingLayout.classList.remove('active');
+      infoLayout.classList.remove('active');
+      
+      if (layoutName === 'cfg') {
+        cfgLayout.classList.add('active');
+        console.log('✅ Showing CFG layout');
+      } else if (layoutName === 'loading') {
+        loadingLayout.classList.add('active');
+        console.log('✅ Showing LOADING layout');
+      } else if (layoutName === 'info') {
+        infoLayout.classList.add('active');
+        console.log('✅ Showing INFO layout');
+      } else {
+        loadingLayout.classList.add('active');
+        console.log('✅ Default: Showing LOADING layout');
+      }
+    }
+
+    // ===== NAVIGATION FUNCTIONS =====
+    function navigateTo(page) {
+      window.location.href = '?' + page;
+    }
+
+    // ===== INITIALIZE ON PAGE LOAD =====
+    (function() {
+      const cfgParam = getParameter('cfg');
+      const loadingParam = getParameter('loading');
+      const infoParam = getParameter('info');
+      
+      console.log('🔍 URL Parameters:');
+      console.log('  cfg:', cfgParam);
+      console.log('  loading:', loadingParam);
+      console.log('  info:', infoParam);
+      
+      if (cfgParam !== null) {
+        showLayout('cfg');
+      } else if (infoParam !== null) {
+        showLayout('info');
+      } else if (loadingParam !== null) {
+        showLayout('loading');
+        setTimeout(function() {
+          window.location.href = '?info';
+        }, 2500);
+      } else {
+        showLayout('loading');
+        setTimeout(function() {
+          window.location.href = '?info';
+        }, 2500);
+      }
+    })();
+
+    // ===== ANDROID CLICK HANDLERS =====
+    function saveCFG() {
+      const configText = document.getElementById('samp.cfg').value;
+      alert('Config saved: ' + configText);
+    }
+  </script>
+</body>
+</html>
