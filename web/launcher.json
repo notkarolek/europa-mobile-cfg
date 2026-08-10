@@ -1,0 +1,21 @@
+{
+    "launcherVersion": 1500,
+    "appName": "EU Mobile",
+    "links": {
+        "discord": "https://discord.gg/europa-roleplay",
+        "files": "https://app.mediafire.com/folder/nnzh0zzbl4oqb/europa",
+        "apk": "https://eurpmobile.vercel.app/launcher_new/app-debug.apk"
+    },
+    "news": {
+        "one": {
+            "title": "News Update 1",
+            "link": "https://discord.com/channels/771464412460089404/1378243351853269022",
+            "image": "https://eurpmobile.vercel.app/web/news1.webp"
+        },
+        "two": {
+            "title": "News Update 2",
+            "link": "https://discord.com/users/1400505698751742002",
+            "image": "https://eurpmobile.vercel.app/web/news2.webp"
+        }
+    }
+}
