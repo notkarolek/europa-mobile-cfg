@@ -1,6 +1,8 @@
 {
     "launcherVersion": 1500,
     "appName": "EU Mobile",
+    "character": "https://eurpmobile.vercel.app/web/char.webp",
+    "background": "https://eurpmobile.vercel.app/web/background.webp",
     "links": {
         "discord": "https://discord.gg/europa-roleplay",
         "files": "https://app.mediafire.com/folder/nnzh0zzbl4oqb/europa",
