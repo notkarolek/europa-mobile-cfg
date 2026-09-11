@@ -2,65 +2,85 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Europa Mobile</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0a0a;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.container{max-width:500px;width:100%;background:#111;border-radius:16px;padding:28px 20px 24px;border:1px solid #2a2a2a;box-shadow:0 8px 32px rgba(0,0,0,0.9)}
-.app-title{font-size:2rem;font-weight:700;letter-spacing:-0.5px;color:#ddd;line-height:1.1;margin-bottom:2px;word-break:break-word}
-.app-title small{font-weight:400;font-size:.95rem;color:#666;letter-spacing:.2px;margin-left:4px}
-.version-chip{display:inline-block;background:#1a1a1a;padding:3px 12px 3px 10px;border-radius:20px;font-size:.75rem;font-weight:500;color:#888;letter-spacing:.3px;border:1px solid #2c2c2c;margin-top:4px;margin-bottom:16px}
-.detail-grid{background:#0e0e0e;border-radius:12px;padding:14px 16px;margin-bottom:20px;border:1px solid #222}
-.detail-row{display:flex;justify-content:space-between;padding:5px 0;font-size:.9rem;border-bottom:1px solid #181818}
-.detail-row:last-child{border-bottom:0}
-.detail-label{color:#6b6b6b;font-weight:450;letter-spacing:.1px}
-.detail-value{color:#b0b0b0;font-weight:450;text-align:right;word-break:break-word;max-width:65%}
-.detail-value.small{font-size:.8rem;color:#8a8a8a}
-.action-group{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 18px}
-.btn{flex:1 1 auto;min-width:110px;background:#2a2a2a;border:1px solid #3a3a3a;border-radius:14px;padding:12px 14px;font-weight:600;font-size:.95rem;color:#ccc;text-align:center;text-decoration:none;display:inline-block;box-shadow:0 2px 0 #1a1a1a;cursor:pointer;line-height:1.2;letter-spacing:.2px}
-.btn:active{background:#1a1a1a;box-shadow:0 1px 0 #0a0a0a;transform:translateY(1px);border-color:#444}
-.btn-outline{background:0 0;border:1px solid #333;color:#888;box-shadow:none;font-weight:500}
-.btn-outline:active{background:#151515;border-color:#444;color:#aaa}
-.coming-block{background:#0c0c0c;border-radius:14px;padding:16px 16px 12px;margin-top:14px;border:1px solid #222}
-.coming-header{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;margin-bottom:8px}
-.coming-title{font-weight:600;font-size:1.05rem;color:#bbb;letter-spacing:.1px}
-.coming-details{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px;font-size:.85rem;color:#7a7a7a;margin-top:4px}
-.coming-details span{color:#6b6b6b;font-weight:400}
-.coming-details .val{color:#a0a0a0;text-align:right}
-@media(max-width:460px){.container{padding:18px 14px 18px}.app-title{font-size:1.7rem}.app-title small{font-size:.85rem;display:block;margin-left:0;margin-top:2px}.btn{font-size:.85rem;padding:10px 8px;min-width:90px}.detail-row{font-size:.82rem;flex-wrap:wrap}.detail-value{max-width:60%}.coming-details{grid-template-columns:1fr;gap:2px}.coming-details .val{text-align:left;padding-left:4px}}
-@media(max-width:380px){.action-group{flex-direction:column}.btn{width:100%}.coming-header{flex-direction:column;align-items:flex-start;gap:4px}}
-.btn:hover{background:#333}
-.btn-outline:hover{background:#141414}
-.btn:focus-visible{outline:2px solid #555;outline-offset:2px}
-a{text-decoration:none;color:inherit}
+body{background:#1a1a1a;color:#c0c0c0;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:13px;margin:0;padding:20px}
+.container{max-width:620px;margin:0 auto;background:#2a2a2a;border:1px solid #444;padding:20px}
+h1{font-size:18px;color:#e8e8e8;margin:0 0 2px;font-weight:bold}
+h1 span{font-size:12px;color:#888;font-weight:normal}
+.meta{color:#888;font-size:11px;margin-bottom:18px;border-bottom:1px solid #444;padding-bottom:10px}
+table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:12px}
+table td{padding:5px 6px;border-bottom:1px solid #3a3a3a;vertical-align:top}
+table td:first-child{color:#888;width:130px}
+table td:last-child{color:#c0c0c0;text-align:right}
+a.btn{display:inline-block;background:#3a3a3a;color:#e0e0e0;border:1px solid #555;padding:8px 16px;text-decoration:none;font-size:12px;margin-right:8px;margin-bottom:6px}
+a.btn:hover{background:#4a4a4a;color:#fff}
+a.btn:active{background:#2a2a2a}
+.section-title{color:#e0e0e0;font-size:13px;font-weight:bold;margin:18px 0 8px;border-bottom:1px solid #444;padding-bottom:4px}
+.footer{margin-top:22px;padding-top:12px;border-top:1px solid #444;font-size:11px;color:#888}
+.footer a{color:#a0a0a0;text-decoration:none}
+.footer a:hover{color:#e0e0e0;text-decoration:underline}
+.mono{font-family:"Courier New",Courier,monospace;font-size:11px;color:#b0b0b0}
+@media(max-width:480px){body{padding:8px}.container{padding:14px}h1{font-size:16px}table td:first-child{width:auto}a.btn{display:block;text-align:center;margin-right:0}}
 </style>
 </head>
 <body>
 <div class="container">
-<div style="display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px">
-<div class="app-title">Europa RP</div>
-<span class="version-chip">v1.4.0</span>
-</div>
-<div class="detail-grid">
-<div class="detail-row"><span class="detail-label">Size</span><span class="detail-value">29 MB</span></div>
-<div class="detail-row"><span class="detail-label">Arch</span><span class="detail-value small">armeabi-v7a (32-bit)</span></div>
-<div class="detail-row"><span class="detail-label">Android SDK</span><span class="detail-value">21 – 35</span></div>
-<div class="detail-row"><span class="detail-label">Package</span><span class="detail-value small" style="font-family:monospace;letter-spacing:-.2px">com.arizona.game</span></div>
-</div>
-<div class="action-group">
+
+<h1>Europa RP <span>v1.4.0</span></h1>
+<div class="meta">Android package</div>
+
+<div class="section-title">Package information</div>
+<table>
+<tr>
+<td>Size</td>
+<td>29 MB</td>
+</tr>
+<tr>
+<td>Architecture</td>
+<td>armeabi-v7a (32-bit)</td>
+</tr>
+<tr>
+<td>Android SDK</td>
+<td>21 &ndash; 35</td>
+</tr>
+<tr>
+<td>Package name</td>
+<td class="mono">com.arizona.game</td>
+</tr>
+</table>
+
+<div class="section-title">Download</div>
+<p style="margin:0 0 12px 0">
 <a href="launcher_new/app-debug.apk" class="btn">Download APK</a>
-<a href="web/4.html" class="btn btn-outline">Files</a>
+<a href="web/4.html" class="btn">Files</a>
+</p>
+
+<div class="section-title">1.5.0 &mdash; Coming soon</div>
+<table>
+<tr>
+<td>Size</td>
+<td>~30 MB</td>
+</tr>
+<tr>
+<td>Architecture</td>
+<td>armeabi-v7a</td>
+</tr>
+<tr>
+<td>Android SDK</td>
+<td>21 &ndash; 35</td>
+</tr>
+<tr>
+<td>Package name</td>
+<td class="mono">rp.europa</td>
+</tr>
+</table>
+
+<div class="footer">
+<a href="terms.json">Privacy Policy &amp; Terms of Usage</a>
 </div>
-<div class="coming-block">
-<div class="coming-header"><span class="coming-title">1.5.0 - Coming Soon</span></div>
-<div class="coming-details">
-<div><span>Size </span><span class="val">≈30 MB</span></div>
-<div><span>Arch </span><span class="val">armeabi-v7a</span></div>
-<div><span>SDK </span><span class="val">21-35</span></div>
-<div><span>Package </span><span class="val" style="font-family:monospace">rp.europa</span></div>
-</div>
-</div>
+
 </div>
 </body>
 </html>
