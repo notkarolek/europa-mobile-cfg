@@ -10,13 +10,13 @@
     },
     "news": {
         "one": {
-            "title": "News Update 1",
+            "title": "1.5.0 Soon!!!",
             "link": "https://discord.com/channels/771464412460089404/1378243351853269022",
             "image": "https://eurpmobile.vercel.app/web/news1.webp"
         },
         "two": {
-            "title": "News Update 2",
-            "link": "https://discord.com/users/1400505698751742002",
+            "title": "There is hope?",
+            "link": "https://discord.com/channels/771464412460089404/1378243351853269022",
             "image": "https://eurpmobile.vercel.app/web/news2.webp"
         }
     }
