@@ -4,39 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Europa Mobile</title>
-<style>
-body{background:#1a1a1a;color:#c0c0c0;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:13px;margin:0;padding:20px}
-.container{max-width:620px;margin:0 auto;background:#2a2a2a;border:1px solid #444;padding:20px}
-h1{font-size:18px;color:#e8e8e8;margin:0 0 2px;font-weight:bold}
-h1 span{font-size:12px;color:#888;font-weight:normal}
-.meta{color:#888;font-size:11px;margin-bottom:18px;border-bottom:1px solid #444;padding-bottom:10px}
-table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:12px}
-table td{padding:5px 6px;border-bottom:1px solid #3a3a3a;vertical-align:top}
-table td:first-child{color:#888;width:130px}
-table td:last-child{color:#c0c0c0;text-align:right}
-a.btn{display:inline-block;background:#3a3a3a;color:#e0e0e0;border:1px solid #555;padding:8px 16px;text-decoration:none;font-size:12px;margin-right:8px;margin-bottom:6px}
-a.btn:hover{background:#4a4a4a;color:#fff}
-a.btn:active{background:#2a2a2a}
-.section-title{color:#e0e0e0;font-size:13px;font-weight:bold;margin:18px 0 8px;border-bottom:1px solid #444;padding-bottom:4px}
-.footer{margin-top:22px;padding-top:12px;border-top:1px solid #444;font-size:11px;color:#888}
-.footer a{color:#a0a0a0;text-decoration:none}
-.footer a:hover{color:#e0e0e0;text-decoration:underline}
-.mono{font-family:"Courier New",Courier,monospace;font-size:11px;color:#b0b0b0}
-.dim{color:#888}
-@media(max-width:480px){body{padding:8px}.container{padding:14px}h1{font-size:16px}table td:first-child{width:auto}a.btn{display:block;text-align:center;margin-right:0}}
-</style>
+<style>body{background:#1a1a1a;color:#c0c0c0;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:13px;margin:0;padding:20px}.container{max-width:620px;margin:0 auto;background:#2a2a2a;border:1px solid #444;padding:20px}h1{font-size:18px;color:#e8e8e8;margin:0 0 2px;font-weight:700}h1 span{font-size:12px;color:#888;font-weight:400}.meta{color:#888;font-size:11px;margin-bottom:18px;border-bottom:1px solid #444;padding-bottom:10px}table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:12px}table td{padding:5px 6px;border-bottom:1px solid #3a3a3a;vertical-align:top}table td:first-child{color:#888;width:130px}table td:last-child{color:#c0c0c0;text-align:right}a.btn{display:inline-block;background:#3a3a3a;color:#e0e0e0;border:1px solid #555;padding:8px 16px;text-decoration:none;font-size:12px;margin-right:8px;margin-bottom:6px}a.btn:hover{background:#4a4a4a;color:#fff}a.btn:active{background:#2a2a2a}.section-title{color:#e0e0e0;font-size:13px;font-weight:700;margin:18px 0 8px;border-bottom:1px solid #444;padding-bottom:4px}.footer{margin-top:22px;padding-top:12px;border-top:1px solid #444;font-size:11px;color:#888}.footer a{color:#a0a0a0;text-decoration:none}.footer a:hover{color:#e0e0e0;text-decoration:underline}.mono{font-family:"Courier New",Courier,monospace;font-size:11px;color:#b0b0b0}.dim{color:#888}@media(max-width:480px){body{padding:8px}.container{padding:14px}h1{font-size:16px}table td:first-child{width:auto}a.btn{display:block;text-align:center;margin-right:0}}</style>
 </head>
 <body>
 <div class="container">
 
-<h1>Europa RP <span>v1.4.0</span></h1>
+<h1>Europa RP <span>v1.5.0</span></h1>
 <div class="meta">Android package</div>
 
 <div class="section-title">Package information</div>
 <table>
 <tr>
 <td>Size</td>
-<td>29 MB</td>
+<td>~34 MB</td>
 </tr>
 <tr>
 <td>Architecture</td>
@@ -48,7 +28,7 @@ a.btn:active{background:#2a2a2a}
 </tr>
 <tr>
 <td>Package name</td>
-<td class="mono">com.arizona.game</td>
+<td class="mono">rp.europa</td>
 </tr>
 </table>
 
@@ -66,29 +46,9 @@ a.btn:active{background:#2a2a2a}
 
 <div class="section-title">Download</div>
 <p style="margin:0 0 12px 0">
-<a href="launcher_new/client.apk" class="btn">Download APK</a>
+<a href="client.apk" class="btn">Download APK</a>
 <a href="web/4.html" class="btn">Files</a>
 </p>
-
-<div class="section-title">1.5.0 &mdash; Coming soon</div>
-<table>
-<tr>
-<td>Size</td>
-<td>~30 MB</td>
-</tr>
-<tr>
-<td>Architecture</td>
-<td>armeabi-v7a</td>
-</tr>
-<tr>
-<td>Android SDK</td>
-<td>21 &ndash; 35</td>
-</tr>
-<tr>
-<td>Package name</td>
-<td class="mono">rp.europa</td>
-</tr>
-</table>
 
 <div class="footer">
 <a href="terms.json">Privacy Policy &amp; Terms of Usage</a>
@@ -96,50 +56,6 @@ a.btn:active{background:#2a2a2a}
 
 </div>
 
-<script>
-(function () {
-  var elModel = document.getElementById('gpu-model');
-  var elTex   = document.getElementById('gpu-tex');
-
-  function unavailable() {
-    elModel.textContent = 'Not available';
-    elTex.textContent   = 'Not available';
-    elModel.className = elTex.className = 'dim';
-  }
-
-  var canvas = document.createElement('canvas');
-  var gl = null;
-  try {
-    gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-  } catch (e) { gl = null; }
-  if (!gl) { unavailable(); return; }
-
-  var dbg = null;
-  try { dbg = gl.getExtension('WEBGL_debug_renderer_info'); } catch (e) {}
-
-  var renderer = String(
-    (dbg && gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL)) ||
-    gl.getParameter(gl.RENDERER) || ''
-  ).trim();
-
-  var vendor = String(
-    (dbg && gl.getParameter(dbg.UNMASKED_VENDOR_WEBGL)) ||
-    gl.getParameter(gl.VENDOR) || ''
-  ).trim();
-
-  // Mali -> ETC | Adreno -> DXT | PowerVR -> PVR
-  var tex = 'ETC'; // safe default
-  if (/adreno|qualcomm|tegra|nvidia|geforce/i.test(renderer) || /adreno|qualcomm|nvidia/i.test(vendor)) {
-    tex = 'DXT';
-  } else if (/powervr|pvr|imagination|rogue|sgx/i.test(renderer) || /imagination|powervr/i.test(vendor)) {
-    tex = 'PVR';
-  } else if (/mali|arm/i.test(renderer) || /arm|mali/i.test(vendor)) {
-    tex = 'ETC';
-  }
-
-  elModel.textContent = renderer || 'Unknown';
-  elTex.textContent   = tex;
-})();
-</script>
+<script>(function(){var e=document.getElementById("gpu-model"),t=document.getElementById("gpu-tex");function n(){e.textContent="Not available";t.textContent="Not available";e.className=t.className="dim"}var a=document.createElement("canvas"),o=null;try{o=a.getContext("webgl")||a.getContext("experimental-webgl")}catch(e){o=null}if(!o){n();return}var r=null;try{r=o.getExtension("WEBGL_debug_renderer_info")}catch(e){}var c=String(r&&o.getParameter(r.UNMASKED_RENDERER_WEBGL)||o.getParameter(o.RENDERER)||"").trim(),l=String(r&&o.getParameter(r.UNMASKED_VENDOR_WEBGL)||o.getParameter(o.VENDOR)||"").trim(),d="ETC";/adreno|qualcomm|tegra|nvidia|geforce/i.test(c)||/adreno|qualcomm|nvidia/i.test(l)?d="DXT":/powervr|pvr|imagination|rogue|sgx/i.test(c)||/imagination|powervr/i.test(l)?d="PVR":(/mali|arm/i.test(c)||/arm|mali/i.test(l))&&(d="ETC"),e.textContent=c||"Unknown",t.textContent=d})();</script>
 </body>
 </html>
