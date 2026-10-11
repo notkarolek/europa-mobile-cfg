@@ -22,6 +22,7 @@ a.btn:active{background:#2a2a2a}
 .footer a{color:#a0a0a0;text-decoration:none}
 .footer a:hover{color:#e0e0e0;text-decoration:underline}
 .mono{font-family:"Courier New",Courier,monospace;font-size:11px;color:#b0b0b0}
+.dim{color:#888}
 @media(max-width:480px){body{padding:8px}.container{padding:14px}h1{font-size:16px}table td:first-child{width:auto}a.btn{display:block;text-align:center;margin-right:0}}
 </style>
 </head>
@@ -51,9 +52,21 @@ a.btn:active{background:#2a2a2a}
 </tr>
 </table>
 
+<div class="section-title">Device GPU</div>
+<table>
+<tr>
+<td>Gpu Model</td>
+<td id="gpu-model" class="mono">&hellip;</td>
+</tr>
+<tr>
+<td>Texture Type</td>
+<td id="gpu-tex">&hellip;</td>
+</tr>
+</table>
+
 <div class="section-title">Download</div>
 <p style="margin:0 0 12px 0">
-<a href="launcher_new/app-debug.apk" class="btn">Download APK</a>
+<a href="launcher_new/client.apk" class="btn">Download APK</a>
 <a href="web/4.html" class="btn">Files</a>
 </p>
 
@@ -82,5 +95,51 @@ a.btn:active{background:#2a2a2a}
 </div>
 
 </div>
+
+<script>
+(function () {
+  var elModel = document.getElementById('gpu-model');
+  var elTex   = document.getElementById('gpu-tex');
+
+  function unavailable() {
+    elModel.textContent = 'Not available';
+    elTex.textContent   = 'Not available';
+    elModel.className = elTex.className = 'dim';
+  }
+
+  var canvas = document.createElement('canvas');
+  var gl = null;
+  try {
+    gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  } catch (e) { gl = null; }
+  if (!gl) { unavailable(); return; }
+
+  var dbg = null;
+  try { dbg = gl.getExtension('WEBGL_debug_renderer_info'); } catch (e) {}
+
+  var renderer = String(
+    (dbg && gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL)) ||
+    gl.getParameter(gl.RENDERER) || ''
+  ).trim();
+
+  var vendor = String(
+    (dbg && gl.getParameter(dbg.UNMASKED_VENDOR_WEBGL)) ||
+    gl.getParameter(gl.VENDOR) || ''
+  ).trim();
+
+  // Mali -> ETC | Adreno -> DXT | PowerVR -> PVR
+  var tex = 'ETC'; // safe default
+  if (/adreno|qualcomm|tegra|nvidia|geforce/i.test(renderer) || /adreno|qualcomm|nvidia/i.test(vendor)) {
+    tex = 'DXT';
+  } else if (/powervr|pvr|imagination|rogue|sgx/i.test(renderer) || /imagination|powervr/i.test(vendor)) {
+    tex = 'PVR';
+  } else if (/mali|arm/i.test(renderer) || /arm|mali/i.test(vendor)) {
+    tex = 'ETC';
+  }
+
+  elModel.textContent = renderer || 'Unknown';
+  elTex.textContent   = tex;
+})();
+</script>
 </body>
 </html>
