@@ -10,13 +10,13 @@
     },
     "news": {
         "one": {
-            "title": "1.5.0 Soon!!!",
-            "link": "https://discord.com/channels/771464412460089404/1378243351853269022",
+            "title": "Haloween! 🎃",
+            "link": "https://discord.com/channels/771464412460089404/1378121646648328262",
             "image": "https://eurpmobile.vercel.app/web/news1.webp"
         },
         "two": {
-            "title": "1.5 Will Release Shortly!",
-            "link": "https://discord.com/channels/771464412460089404/1378243351853269022",
+            "title": "1.5.0 Is Online!",
+            "link": "https://eurpmobile.vercel.app/",
             "image": "https://eurpmobile.vercel.app/web/news2.webp"
         }
     }
