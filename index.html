@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Europa Mobile</title>
-<style>body{background:#1a1a1a;color:#c0c0c0;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:13px;margin:0;padding:20px}.container{max-width:620px;margin:0 auto;background:#2a2a2a;border:1px solid #444;padding:20px}h1{font-size:18px;color:#e8e8e8;margin:0 0 2px;font-weight:700}h1 span{font-size:12px;color:#888;font-weight:400}.meta{color:#888;font-size:11px;margin-bottom:18px;border-bottom:1px solid #444;padding-bottom:10px}table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:12px}table td{padding:5px 6px;border-bottom:1px solid #3a3a3a;vertical-align:top}table td:first-child{color:#888;width:130px}table td:last-child{color:#c0c0c0;text-align:right}a.btn{display:inline-block;background:#3a3a3a;color:#e0e0e0;border:1px solid #555;padding:8px 16px;text-decoration:none;font-size:12px;margin-right:8px;margin-bottom:6px}a.btn:hover{background:#4a4a4a;color:#fff}a.btn:active{background:#2a2a2a}.section-title{color:#e0e0e0;font-size:13px;font-weight:700;margin:18px 0 8px;border-bottom:1px solid #444;padding-bottom:4px}.footer{margin-top:22px;padding-top:12px;border-top:1px solid #444;font-size:11px;color:#888}.footer a{color:#a0a0a0;text-decoration:none}.footer a:hover{color:#e0e0e0;text-decoration:underline}.mono{font-family:"Courier New",Courier,monospace;font-size:11px;color:#b0b0b0}.dim{color:#888}@media(max-width:480px){body{padding:8px}.container{padding:14px}h1{font-size:16px}table td:first-child{width:auto}a.btn{display:block;text-align:center;margin-right:0}}</style>
+<style>body{background:#1a1a1a;color:#c0c0c0;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:13px;margin:0;padding:20px}.container{max-width:620px;margin:0 auto;background:#2a2a2a;border:1px solid #444;padding:20px}h1{font-size:18px;color:#e8e8e8;margin:0 0 2px;font-weight:700}h1 span{font-size:12px;color:#888;font-weight:400}.meta{color:#888;font-size:11px;margin-bottom:18px;border-bottom:1px solid #444;padding-bottom:10px}table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:12px}table td{padding:5px 6px;border-bottom:1px solid #3a3a3a;vertical-align:top}table td:first-child{color:#888;width:130px}table td:last-child{color:#c0c0c0;text-align:right}a.btn{display:inline-block;background:#3a3a3a;color:#e0e0e0;border:1px solid #555;padding:8px 16px;text-decoration:none;font-size:12px;margin-right:8px;margin-bottom:6px}a.btn:hover{background:#4a4a4a;color:#fff}a.btn:active{background:#2a2a2a}a.btn.rec{background:#3d4a3d;border-color:#5a7a5a;color:#e8f0e8}a.btn.rec:hover{background:#4a5a4a}.section-title{color:#e0e0e0;font-size:13px;font-weight:700;margin:18px 0 8px;border-bottom:1px solid #444;padding-bottom:4px}.footer{margin-top:22px;padding-top:12px;border-top:1px solid #444;font-size:11px;color:#888}.footer a{color:#a0a0a0;text-decoration:none}.footer a:hover{color:#e0e0e0;text-decoration:underline}.mono{font-family:"Courier New",Courier,monospace;font-size:11px;color:#b0b0b0}.tag{display:inline-block;background:#3a3a3a;border:1px solid #555;color:#e0e0e0;font-size:10px;padding:1px 6px;margin-left:6px;vertical-align:middle}@media(max-width:480px){body{padding:8px}.container{padding:14px}h1{font-size:16px}table td:first-child{width:auto}a.btn{display:block;text-align:center;margin-right:0}}</style>
 </head>
 <body>
 <div class="container">
@@ -32,22 +32,19 @@
 </tr>
 </table>
 
-<div class="section-title">Device GPU</div>
-<table>
-<tr>
-<td>Gpu Model</td>
-<td id="gpu-model" class="mono">&hellip;</td>
-</tr>
-<tr>
-<td>Texture Type</td>
-<td id="gpu-tex">&hellip;</td>
-</tr>
-</table>
-
 <div class="section-title">Download</div>
-<p style="margin:0 0 12px 0">
-<a href="launcher_new/client.apk" class="btn">Download APK</a>
-<a href="web/4.html" class="btn">Files</a>
+
+<p style="margin:0 0 6px 0">
+<a href="launcher_new/client.apk" class="btn">Download Client (APK)</a>
+</p>
+
+<p style="margin:0 0 6px 0">
+<a href="https://www.mediafire.com/file/zwxjx23td6k50f7/files_main.zip/file" class="btn">Download files_main.zip</a>
+</p>
+
+<p style="margin:0 0 6px 0" id="tex-row">
+<a href="https://www.mediafire.com/file/3cec4e7la7cb95d/textures_etc.zip/file" id="tex-link" class="btn rec">Download textures_<span id="tex-name">etc</span>.zip</a>
+<span class="tag" id="tex-tag">detecting&hellip;</span>
 </p>
 
 <div class="footer">
@@ -56,6 +53,6 @@
 
 </div>
 
-<script>(function(){var e=document.getElementById("gpu-model"),t=document.getElementById("gpu-tex");function n(){e.textContent="Not available";t.textContent="Not available";e.className=t.className="dim"}var a=document.createElement("canvas"),o=null;try{o=a.getContext("webgl")||a.getContext("experimental-webgl")}catch(e){o=null}if(!o){n();return}var r=null;try{r=o.getExtension("WEBGL_debug_renderer_info")}catch(e){}var c=String(r&&o.getParameter(r.UNMASKED_RENDERER_WEBGL)||o.getParameter(o.RENDERER)||"").trim(),l=String(r&&o.getParameter(r.UNMASKED_VENDOR_WEBGL)||o.getParameter(o.VENDOR)||"").trim(),d="ETC";/adreno|qualcomm|tegra|nvidia|geforce/i.test(c)||/adreno|qualcomm|nvidia/i.test(l)?d="DXT":/powervr|pvr|imagination|rogue|sgx/i.test(c)||/imagination|powervr/i.test(l)?d="PVR":(/mali|arm/i.test(c)||/arm|mali/i.test(l))&&(d="ETC"),e.textContent=c||"Unknown",t.textContent=d})();</script>
+<script>(function(){var e=document.getElementById("tex-link"),n=document.getElementById("tex-name"),t=document.getElementById("tex-tag"),a=document.createElement("canvas"),o=null;try{o=a.getContext("webgl")||a.getContext("experimental-webgl")}catch(e){o=null}var r="etc",c="";if(o){var l=null;try{l=o.getExtension("WEBGL_debug_renderer_info")}catch(e){}var d=String(l&&o.getParameter(l.UNMASKED_RENDERER_WEBGL)||o.getParameter(o.RENDERER)||"").trim(),i=String(l&&o.getParameter(l.UNMASKED_VENDOR_WEBGL)||o.getParameter(o.VENDOR)||"").trim();/adreno|qualcomm|tegra|nvidia|geforce/i.test(d)||/adreno|qualcomm|nvidia/i.test(i)?(r="dxt",c=d):/powervr|pvr|imagination|rogue|sgx/i.test(d)||/imagination|powervr/i.test(i)?(r="pvr",c=d):/mali|arm/i.test(d)||/arm|mali/i.test(i)?(r="etc",c=d):c=d}var s={etc:"https://www.mediafire.com/file/3cec4e7la7cb95d/textures_etc.zip/file",dxt:"https://www.mediafire.com/file/c5mwgwooeafutc7/textures_dxt.zip/file",pvr:"https://www.mediafire.com/file/epvh55js6eajvhq/textures_pvr.zip/file"};e.href=s[r],n.textContent=r,t.textContent=r.toUpperCase()+(c?" \u00b7 "+c:"")})();</script>
 </body>
 </html>
