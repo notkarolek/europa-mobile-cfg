@@ -1,23 +1,23 @@
 {
     "launcherVersion": 1500,
     "appName": "EU Mobile",
-    "character": "https://eurpmobile.vercel.app/web/char.webp",
-    "background": "https://eurpmobile.vercel.app/web/background.webp",
+    "character": "https://notkarolek.github.io/europa-mobile-cfg/web/char.webp",
+    "background": "https://notkarolek.github.io/europa-mobile-cfg/web/background.webp",
     "links": {
         "discord": "https://discord.gg/eu-rp",
         "files": "https://app.mediafire.com/folder/nnzh0zzbl4oqb/europa",
-        "apk": "https://eurpmobile.vercel.app/launcher_new/client.apk"
+        "apk": "https://notkarolek.github.io/europa-mobile-cfg/launcher_new/client.apk"
     },
     "news": {
         "one": {
             "title": "Haloween! 🎃",
             "link": "https://discord.com/channels/771464412460089404/1378121646648328262",
-            "image": "https://eurpmobile.vercel.app/web/news1.webp"
+            "image": "https://notkarolek.github.io/europa-mobile-cfg/web/news1.webp"
         },
         "two": {
             "title": "1.5.0 Is Online!",
-            "link": "https://eurpmobile.vercel.app/",
-            "image": "https://eurpmobile.vercel.app/web/news2.webp"
+            "link": "https://notkarolek.github.io/europa-mobile-cfg/",
+            "image": "https://notkarolek.github.io/europa-mobile-cfg/web/news2.webp"
         }
     }
 }
