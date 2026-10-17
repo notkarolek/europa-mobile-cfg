@@ -1,23 +1,23 @@
 {
     "launcherVersion": 1500,
     "appName": "EU Mobile",
-    "character": "https://files.eu-rp.com/Mobile/Downloads/char.webp",
-    "background": "https://files.eu-rp.com/Mobile/Downloads/background.webp",
+    "character": "https://files.eu-rp.com/mobile/char.webp",
+    "background": "https://files.eu-rp.com/mobile/background.webp",
     "links": {
         "discord": "https://discord.gg/eu-rp",
         "files": "https://notkarolek.github.io/europa-mobile-cfg",
-        "apk": "https://files.eu-rp.com/Mobile/Downloads/client.apk"
+        "apk": "https://files.eu-rp.com/mobile/client.apk"
     },
     "news": {
         "one": {
             "title": "Haloween! 🎃",
             "link": "https://discord.com/channels/771464412460089404/1378121646648328262",
-            "image": "https://files.eu-rp.com/Mobile/Downloads/news1.webp"
+            "image": "https://files.eu-rp.com/mobile/news1.webp"
         },
         "two": {
             "title": "1.5.0 Is Online!",
             "link": "https://notkarolek.github.io/europa-mobile-cfg/",
-            "image": "https://files.eu-rp.com/Mobile/Downloads/news2.webp"
+            "image": "https://files.eu-rp.com/mobile/news2.webp"
         }
     }
 }
